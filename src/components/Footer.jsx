@@ -110,7 +110,7 @@ export default function Footer() {
             </h5>
             <ul className="space-y-3 text-[1rem] columns-1 md:columns-2">
               <li>
-                <Link href="/epfDesk">EPFDesk</Link>
+                <Link href="/epfdesk">EPFDesk</Link>
               </li>
               <li>
                 <Link href="/epfManagement">EPFO</Link>
@@ -128,7 +128,7 @@ export default function Footer() {
                 <Link href="/pt">PT</Link>
               </li>
               <li>
-                <Link href="/about">About Us</Link>
+                <Link href="/aboutUs">About Us</Link>
               </li>
             </ul>
           </div>

@@ -3529,7 +3529,7 @@ export const horizontalCardsLinks = [
     subtitle:
       "Say goodbye to endless employee EPF queries. Our unique EPF Desk platform offers a direct, transparent channel for your workforce to resolve all their EPF issues. Our on-ground experts handle everything from status updates to complex EPFO interactions, allowing your HR to focus on core employee engagement.",
     icon: "🎯",
-    link: "/epfDesk",
+    link: "/epfdesk",
     bubble: "Focus!",
     gradient: "from-[#a18cd1] to-[#fbc2eb]",
     bgs: ["bg-[#d299c2]", "bg-[#ff6b6b]"],
@@ -3540,7 +3540,7 @@ export const horizontalCardsLinks = [
     subtitle:
       "Reclaim up to 90% of your HR's time spent on EPF administration. We meticulously handle monthly employee additions/deletions, precise challan creation, and all employer approvals, ensuring flawless compliance and freeing your teams for strategic growth.",
     icon: "🔍",
-    link: "/epf",
+    link: "/epfManagement",
     bubble: "Discover!",
     gradient: "from-[#ff9a9e] to-[#fecfef]",
     bgs: ["bg-[#ff6b6b]", "bg-[#4ecdc4]"],

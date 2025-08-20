@@ -49,7 +49,7 @@ const HorizontalCards = ({ cardsData, link }) => {
                   backgroundImage: "linear-gradient(180deg, #e6f9ee, #c4f5db)",
                   color: "#007a7a",
                 }}
-                className="px-6 py-3 text-[1.2rem] font-semibold rounded-xl transition w-fit"
+                className="px-6 py-3 text-[1.2rem] font-semibold rounded-xl transition w-fit cursor-pointer"
                 onClick={() => link(card.link)}
               >
                 Learn more about {card.title}

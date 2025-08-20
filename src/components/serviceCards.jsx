@@ -36,7 +36,7 @@ const ServiceCards = () => {
         <div className="max-w-6xl mx-auto px-4 py-16 flex flex-col gap-8">
           <HorizontalCards
             cardsData={horizontalCardsLinks}
-            link={handleNavigation} // ✅ passes Next.js navigation
+            link={handleNavigation}
           />
         </div>
       </div>
