@@ -10,6 +10,17 @@ import CustomerCarousel from "@/components/customerCarousel";
 import { largeCardsLanding } from "@/utils/data";
 import Image from "next/image";
 
+export const metadata = {
+  title: "EPF Desk | Simplifying EPF Compliance & Payroll Services for Businesses in India",
+  description:
+    "EPFDesk.com frees your HR and Finance teams to focus on what they do best: driving growth, developing talent, and building the future of your organization. ",
+  alternates: { canonical: "https://epfdesk-next.vercel.app/" },
+  openGraph: {
+    title: "EPF Desk | Simplifying EPF Compliance & Payroll Services for Businesses in India",
+    url: "https://epfdesk-next.vercel.app",
+  },
+};
+
 export default function Home() {
   return (
     <>

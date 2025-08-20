@@ -45,10 +45,10 @@ export default function Hero({ setShowFloating }) {
             <h1 className="text-4xl sm:text-5xl font-bold text-black mb-8">
               Streamline EPFO, ESIC & PT Compliance Unlock HR potential
             </h1>
-            <p className="text-lg sm:text-[1.5rem] text-gray-600 mb-2 md:mb-2 lg:mb-2">
+            <h2 className="text-lg sm:text-[1.5rem] text-gray-600 mb-2 md:mb-2 lg:mb-2">
               We Handle 90% of Your EPFO, ESIC, PT & LWF Compliance – Free HR &
               Finance Teams for Growth
-            </p>
+            </h2>
             <div className="flex flex-col gap-4 mb-2">
               <LinkButtons />
             </div>

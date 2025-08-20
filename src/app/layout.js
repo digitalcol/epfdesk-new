@@ -5,9 +5,10 @@ import Footer from "@/components/Footer";
 import HeroObserver from "@/components/heroObserver";
 
 export const metadata = {
-  title: "EPFdesk",
-  description: "EPF Compliance & Payroll Services in India",
+  title: "EPF Desk | Expert EPF Compliance & Payroll Services in India",
+  description: "Simplify PF compliance with EPF Desk. We handle monthly filings, inspections, challans, and payroll processing for businesses across India.",
 };
+
 
 export default function RootLayout({ children }) {
   const jsonLd = {
