@@ -1,0 +1,81 @@
+"use client";
+
+import React, { useEffect, useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+
+const LatticeSlider = ({ slides }) => {
+  const [isReady, setIsReady] = useState(false);
+  const paginationRef = useRef(null);
+  const { sectionTitle, sectionSubtitle, items } = slides;
+
+  useEffect(() => {
+    // Wait for pagination div to be in the DOM
+    if (paginationRef.current) {
+      setIsReady(true);
+    }
+  }, []);
+
+  return (
+    <section className="py-6 bg-white">
+      <div className="max-w-7xl md:max-w-[110rem] lg:max-w-[110rem] mx-auto px-4 overflow-hidden">
+        <h2 className="text-3xl font-bold text-center mb-16">{sectionTitle}</h2>
+        <h3 className="text-2xl font-bold mb-8 text-center md:text-left">
+          {sectionSubtitle}
+        </h3>
+
+        {/* Render Swiper only after paginationRef is mounted */}
+        {isReady && (
+          <Swiper
+            modules={[Pagination]}
+            spaceBetween={16}
+            slidesPerView={1}
+            pagination={{
+              clickable: true,
+              el: paginationRef.current,
+            }}
+            breakpoints={{
+              480: { slidesPerView: 1.2 },
+              640: { slidesPerView: 1.4 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+              1326: { slidesPerView: 3 },
+              1500: { slidesPerView: 4 },
+            }}
+            className="!overflow-visible"
+          >
+            {items.map((slide, index) => (
+              <SwiperSlide key={index} className="!h-auto">
+                <div className="w-full md:basis-1/2 lg:basis-1/3 xl:basis-1/4 rounded-xl shadow-md h-full">
+                  <div className="aspect-square w-full overflow-hidden p-3 ">
+                    <img
+                      src={slide.img}
+                      alt={slide.alt}
+                      className="w-full h-full object-cover rounded-xl"
+                    />
+                  </div>
+                  <div className="p-4 flex-1">
+                    <h3 className="text-[1.8rem] font-semibold mb-2">
+                      {slide.title}
+                    </h3>
+                    <p className="text-[1.4rem] text-gray-600">{slide.desc}</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        )}
+
+        {/* Ref for pagination bullets */}
+        <div
+          ref={paginationRef}
+          className="custom-swiper-pagination mt-6 flex justify-center gap-2"
+        />
+      </div>
+    </section>
+  );
+};
+
+export default LatticeSlider;
