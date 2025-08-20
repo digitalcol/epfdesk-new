@@ -19,27 +19,27 @@ const heroData = [
       <p>
         <strong className="text-black">Born from Necessity:</strong> Our Journey
         to Simplify HR & Labour Compliance for Every Indian Business. Even as
-        seasoned professionals navigating India's dynamic business landscape, we
+        seasoned professionals navigating India&apos;s dynamic business landscape, we
         faced the same persistent headaches that plague countless enterprises:
         the labyrinthine complexities of HR and Labour compliance. We witnessed
         firsthand how precious hours, once dedicated to innovation and growth,
         were consumed by deciphering ever-changing regulations, managing
         mountains of paperwork, and the constant apprehension of non-compliance.
-        It wasn't just about avoiding penalties; it was about the sheer drain on
+        It wasn&apos;t just about avoiding penalties; it was about the sheer drain on
         productivity and the mental burden it placed on businesses and their
         valuable employees. We realized that if even we, with our deep
         understanding of the regulatory environment, found it challenging, what
-        about the rest of India's vibrant business community? This shared
+        about the rest of India&apos;s vibrant business community? This shared
         struggle ignited a powerful resolve within us. We envisioned a world
         where Indian businesses, regardless of their size, could operate with
         complete peace of mind, knowing their compliance was meticulously
         handled. A world where they could channel their energy entirely into
         what they do best – innovating, expanding, and creating opportunities –
         all while their employees thrived in a secure and compliant environment.
-        This vision wasn't just a dream; it became our mission. We founded
+        This vision wasn&apos;t just a dream; it became our mission. We founded
         EPFDesk to transform the daunting world of HR and Labour compliance into
         a seamless, stress-free experience. We decided to take on the burden
-        ourselves, so you don't have to. Our purpose is clear: to be the
+        ourselves, so you don&apos;t have to. Our purpose is clear: to be the
         steadfast partner that empowers every Indian business to flourish,
         unburdened by compliance worries, and to contribute to a more productive
         and prosperous India for all.
@@ -57,7 +57,7 @@ const heroData = [
       <p>
         <strong className="text-black">Beyond Regulations:</strong> Deep Industry Insight, Proactive Strategies,
         Flawless Execution. At EPFDesk, our expertise transcends mere legal
-        interpretation. We don't just read the labour laws; we intimately
+        interpretation. We don&apos;t just read the labour laws; we intimately
         understand their practical implications, the nuances of their
         application across diverse industries, and their direct impact on both
         businesses and employees. Our team comprises seasoned legal minds, HR
@@ -105,7 +105,7 @@ Our relationship with you extends far beyond transactional compliance. We are de
           Have questions about EPF or any other HR & Labour compliance?
         </h2>
         <p className="text-gray-600">
-          Ready to transform your business's approach to regulations? EPFDesk is
+          Ready to transform your business&apos;s approach to regulations? EPFDesk is
           strategically located to serve you across India. Reach out to us
           today, and let our experts guide you toward peace of mind and enhanced
           productivity, no matter where your business operates.
