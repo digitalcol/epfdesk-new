@@ -62,7 +62,7 @@ const Posh = () => {
           Why EPFdesk.com: Your Definitive Partner for POSH Act Compliance{" "}
         </h2>
         <p className="max-w-5xl mx-auto mt-6 text-center px-4 text-[1.4rem] mb-10 text-gray-600 font-bold">
-          EPFdesk.com stands as India's premier choice for comprehensive POSH
+          EPFdesk.com stands as India&apos;s premier choice for comprehensive POSH
           Act compliance, redefining workplace safety and legal integrity for
           mid-to-large enterprises.
         </p>
