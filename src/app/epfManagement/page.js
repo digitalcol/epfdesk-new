@@ -5,11 +5,19 @@ import { epfManagementFaq, epfoCards, heroSlides } from "@/utils/data";
 import EPFServicesSection from "@/components/epfServicesSection";
 import FaqAccordion from "@/components/faqAccordian";
 
+export const metadata = {
+  title: `Employer EPF Management: Streamline Your Compliance & Unleash HR's Potential`,
+  description:
+    "Master employer EPF compliance with EPFDesk.com. We automate challans, manage filings & mitigate risks, freeing your HR & Finance teams for strategic growth. Expert-led solutions for Indian businesses.",
+  alternates: { canonical: "https://epfdesk-next.vercel.app/epfManagement" },
+  openGraph: {
+    title: `Employer EPF Management: Streamline Your Compliance & Unleash HR's Potential`,
+    url: "https://epfdesk-next.vercel.app/epfManagement",
+  },
+};
+
 function Hero() {
-  return (
-    <HeroSection slide={heroSlides[4]} />
-   
-  );
+  return <HeroSection slide={heroSlides[4]} />;
 }
 
 const EPFManagement = () => {
@@ -18,7 +26,7 @@ const EPFManagement = () => {
       <FadeInWhenVisible>
         <Hero />
       </FadeInWhenVisible>
-     
+
       <FadeInWhenVisible>
         <div>
           <h2 className="text-3xl sm:text-5xl mt-12 font-bold text-center">
@@ -36,7 +44,7 @@ const EPFManagement = () => {
       <FadeInWhenVisible>
         <EPFServicesSection />
       </FadeInWhenVisible>
-  
+
       <FadeInWhenVisible>
         <FaqAccordion faqs={epfManagementFaq} />
       </FadeInWhenVisible>

@@ -1,16 +1,34 @@
-"use client"
-import React, { useState } from 'react';
+"use client";
+import React, { useState } from "react";
+import Script from "next/script";
 
-const FaqAccordion = ({ faqs, title = 'Frequently Asked Questions' }) => {
+const FaqAccordion = ({ faqs, title = "Frequently Asked Questions" }) => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+ 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <section className="w-full max-w-4xl mx-auto px-4 py-12">
-      <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-gray-900">{title}</h2>
+      <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-gray-900">
+        {title}
+      </h2>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {faqs.map((faq, index) => (
           <div
@@ -20,7 +38,7 @@ const FaqAccordion = ({ faqs, title = 'Frequently Asked Questions' }) => {
             <button
               onClick={() => toggle(index)}
               className={`w-full flex justify-between items-center text-left px-4 py-3 font-medium transition-colors duration-300 focus:outline-none ${
-                openIndex === index ? 'text-indigo-600' : 'text-gray-900'
+                openIndex === index ? "text-indigo-600" : "text-gray-900"
               }`}
               aria-expanded={openIndex === index}
               aria-controls={`faq-${index}`}
@@ -28,7 +46,9 @@ const FaqAccordion = ({ faqs, title = 'Frequently Asked Questions' }) => {
               <span className="text-base">{faq.question}</span>
               <svg
                 className={`w-5 h-5 transform transition-transform duration-300 ${
-                  openIndex === index ? 'rotate-180 text-indigo-600' : 'text-gray-400'
+                  openIndex === index
+                    ? "rotate-180 text-indigo-600"
+                    : "text-gray-400"
                 }`}
                 fill="none"
                 stroke="currentColor"
@@ -45,7 +65,7 @@ const FaqAccordion = ({ faqs, title = 'Frequently Asked Questions' }) => {
             <div
               id={`faq-${index}`}
               className={`overflow-hidden transition-all duration-300 ease-in-out px-4 text-gray-700 text-sm ${
-                openIndex === index ? 'max-h-[500px] py-2' : 'max-h-0'
+                openIndex === index ? "max-h-[500px] py-2" : "max-h-0"
               }`}
             >
               {faq.answer}
@@ -53,6 +73,13 @@ const FaqAccordion = ({ faqs, title = 'Frequently Asked Questions' }) => {
           </div>
         ))}
       </div>
+
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
     </section>
   );
 };

@@ -135,7 +135,7 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-12 border-t pt-6 text-center text-xs text-gray-500 space-y-1">
+        <div className="mt-12 border-t border-gray-300 pt-6 text-center text-xs text-gray-500 space-y-1">
           <p>© 2025 EPFdesk.com All rights reserved.</p>
         </div>
 

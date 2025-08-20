@@ -20,6 +20,17 @@ import PastelCardSlider from "@/components/pastelCardSlider";
 import StickyScrollSections from "@/components/scrollSyncComponent";
 import FaqAccordion from "@/components/faqAccordian";
 
+export const metadata = {
+  title: `POSH Act Compliance: Fostering Safe Workplaces, Ensuring Legal Integrity`,
+  description:
+    "EPFdesk.com offers expert POSH Act compliance in India, including a dedicated 3rd-party complaint hotline. Establish IC, conduct training, handle complaints & ensure 100% adherence to POSH Act 2013 for safe workplaces.",
+  alternates: { canonical: "https://epfdesk-next.vercel.app/posh" },
+  openGraph: {
+    title: `POSH Act Compliance: Fostering Safe Workplaces, Ensuring Legal Integrity`,
+    url: "https://epfdesk-next.vercel.app/posh",
+  },
+};
+
 
 function Hero() {
   return <HeroSection slide={heroSlides[5]} />;
