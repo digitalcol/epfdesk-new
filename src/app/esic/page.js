@@ -9,10 +9,10 @@ export const metadata = {
   title: `ESIC Compliance: Effortless Management for Employee Well-being & Business Protection`,
   description:
     "Master ESIC compliance with EPFDesk.com. We handle registration, accurate contributions, monthly filings & ensure all employee benefits. Avoid penalties, achieve 99.9% accuracy, and empower your HR.",
-  alternates: { canonical: "https://epfdesk-next.vercel.app/esic" },
+  alternates: { canonical: "https://epfdesk.com/esic" },
   openGraph: {
     title: `ESIC Compliance: Effortless Management for Employee Well-being & Business Protection`,
-    url: "https://epfdesk-next.vercel.app/esic",
+    url: "https://epfdesk.com/esic",
   },
 };
 

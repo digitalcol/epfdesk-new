@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const base = 'https://epfdesk-next.vercel.app';
+  const base = 'https://epfdesk.com';
   return [
     {
       url: `${base}/`,

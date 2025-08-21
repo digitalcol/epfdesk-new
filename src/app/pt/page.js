@@ -8,10 +8,10 @@ export const metadata = {
   title: `Professional Tax Compliance: Master Multi-State Nuances, Ensure Flawless Adherence`,
   description:
     "Master Professional Tax compliance across India with EPFDesk.com. We handle state-specific calculations, precise filings, and ensure timely adherence. Avoid penalties, achieve 100% accuracy for PT.",
-  alternates: { canonical: "https://epfdesk-next.vercel.app/pt" },
+  alternates: { canonical: "https://epfdesk.com/pt" },
   openGraph: {
     title: `Professional Tax Compliance: Master Multi-State Nuances, Ensure Flawless Adherence`,
-    url: "https://epfdesk-next.vercel.app/pt",
+    url: "https://epfdesk.com/pt",
   },
 };
 

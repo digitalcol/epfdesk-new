@@ -9,10 +9,10 @@ export const metadata = {
   title: `Employer EPF Management: Streamline Your Compliance & Unleash HR's Potential`,
   description:
     "Master employer EPF compliance with EPFDesk.com. We automate challans, manage filings & mitigate risks, freeing your HR & Finance teams for strategic growth. Expert-led solutions for Indian businesses.",
-  alternates: { canonical: "https://epfdesk-next.vercel.app/epfManagement" },
+  alternates: { canonical: "https://epfdesk.com/epfManagement" },
   openGraph: {
     title: `Employer EPF Management: Streamline Your Compliance & Unleash HR's Potential`,
-    url: "https://epfdesk-next.vercel.app/epfManagement",
+    url: "https://epfdesk.com/epfManagement",
   },
 };
 

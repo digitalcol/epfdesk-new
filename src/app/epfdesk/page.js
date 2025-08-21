@@ -20,10 +20,10 @@ export const metadata = {
   title: "EPFDesk: Your Direct Line to Effortless EPF Solutions & Support",
   description:
     "EPFDesk empowers your employees with instant EPF query resolution. Check balance, track claims, update KYC & more – all issues handled by our experts. Free your HR team from daily EPF queries.",
-  alternates: { canonical: "https://epfdesk-next.vercel.app/epfdesk" },
+  alternates: { canonical: "https://epfdesk.com/epfdesk" },
   openGraph: {
     title: "EPFDesk: Your Direct Line to Effortless EPF Solutions & Support",
-    url: "https://epfdesk-next.vercel.app/epfdesk",
+    url: "https://epfdesk.com/epfdesk",
   },
 };
 

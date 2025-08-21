@@ -1,39 +1,44 @@
 import { notFound } from "next/navigation";
+import { client } from "../../../sanity/lib/client";
+import Image from "next/image";
+import { PortableText } from "@portabletext/react";
+import { urlFor } from "../../../sanity/lib/image";
 
-const blogPosts = {
-  "epf-compliance-guide": {
-    title: "The Ultimate Guide to EPF Compliance",
-    date: "2025-08-20",
-    author: "EPF Desk Team",
-    content: `
-      <p>EPF compliance is essential for companies in India. In this guide, we'll cover the rules, deadlines, and penalties for non-compliance.</p>
-      <p>Employers must contribute 12% of the employee’s basic salary towards EPF...</p>
-    `,
-  },
-  "payroll-trends-2025": {
-    title: "Top Payroll Trends in 2025",
-    date: "2025-08-15",
-    author: "EPF Desk Team",
-    content: `
-      <p>Payroll is rapidly evolving with automation, AI-driven compliance checks, and self-service portals becoming mainstream.</p>
-    `,
-  },
-};
+export default async function BlogDetail({ params }) {
+  // Fetch the blog post by slug
+  const post = await client.fetch(
+    `*[_type == "post" && slug.current == $slug][0]{
+      title,
+      publishedAt,
+      "author": author->name,
+      body,
+      mainImage
+    }`,
+    { slug: params.slug }
+  );
 
-export default function BlogDetail({ params }) {
-  const post = blogPosts[params.slug];
   if (!post) return notFound();
 
   return (
     <article className="max-w-3xl mx-auto px-6 py-24">
+      {post.mainImage && (
+        <Image
+          src={urlFor(post.mainImage).width(600).height(400).url()}
+          alt={post.title}
+          width={600}
+          height={400}
+        />
+      )}
+
       <h1 className="text-4xl font-bold text-gray-900 mb-4">{post.title}</h1>
       <p className="text-gray-500 text-sm mb-6">
-        {post.date} • By {post.author}
+        {new Date(post.publishedAt).toLocaleDateString()} • By {post.author}
       </p>
-      <div
-        className="prose prose-lg max-w-none"
-        dangerouslySetInnerHTML={{ __html: post.content }}
-      />
+
+      {/* Render rich text from Sanity */}
+      <div className="prose prose-lg max-w-none">
+        <PortableText value={post.body} />
+      </div>
     </article>
   );
 }

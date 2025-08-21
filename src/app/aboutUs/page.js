@@ -5,13 +5,13 @@ export const metadata = {
   description:
     "Learn about EPFdesk, India's trusted partner for EPF compliance, PF outsourcing, and payroll services. Discover our mission, vision, and commitment to simplifying compliance for businesses nationwide.",
   alternates: {
-    canonical: "https://epfdesk-next.vercel.app/aboutUs",
+    canonical: "https://epfdesk.com/aboutUs",
   },
   openGraph: {
     title: "About Us | EPFdesk",
     description:
       "EPFdesk is India's leading PF outsourcing and compliance partner. Learn more about our story, values, and nationwide compliance solutions.",
-    url: "https://epfdesk-next.vercel.app/aboutUs",
+    url: "https://epfdesk.com/aboutUs",
     siteName: "EPFdesk",
     type: "website",
   },

@@ -8,10 +8,10 @@ export const metadata = {
   title: `Labour Welfare Fund (LWF) Compliance: Navigating State Nuances for Flawless Adherence`,
   description:
     "Master LWF compliance across India with EPFDesk.com. We handle state-specific calculations, filings & ensure timely adherence. Avoid penalties, achieve 100% accuracy for LWF.",
-  alternates: { canonical: "https://epfdesk-next.vercel.app/lwf" },
+  alternates: { canonical: "https://epfdesk.com/lwf" },
   openGraph: {
     title: `Labour Welfare Fund (LWF) Compliance: Navigating State Nuances for Flawless Adherence`,
-    url: "https://epfdesk-next.vercel.app/lwf",
+    url: "https://epfdesk.com/lwf",
   },
 };
 
