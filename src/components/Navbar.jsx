@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { AnimatePresence, motion } from "framer-motion";
+import AnnouncementBar from "./AnnouncementBar";
 
 const links = [
   { href: "/epfdesk", label: "EPFdesk" },
@@ -27,6 +28,8 @@ export default function Navbar({ banner }) {
   }, []);
 
   return (
+    <div className="fixed top-0 left-0 right-0 z-50">
+    <AnnouncementBar />
     <header
       className={`fixed z-50 w-full border-b border-gray-300 px-5 backdrop-blur-md ${
         scrolled ? "bg-white/80 shadow" : "bg-transparent"
@@ -110,5 +113,6 @@ export default function Navbar({ banner }) {
         )}
       </AnimatePresence>
     </header>
+    </div>
   );
 }

@@ -79,16 +79,30 @@ export default function Footer() {
               </div>
               <div className="flex flex-col gap-5">
                 <a
-                  href="mailto:hello@epfdesk.com"
+                  href={`mailto:hello@epfdesk.com?subject=${encodeURIComponent(
+                    "Inquiry about Compliance Services"
+                  )}&body=${encodeURIComponent(
+                    "Hello EPFDesk,\n\n" +
+                      "I’d like to know more about your compliance services.\n\n" +
+                      "Company Name:\n" +
+                      "No. of Employees:\n" +
+                      "My Role:\n" +
+                      "Areas of interest:"
+                  )}`}
                   className="text-gray-500 hover:text-blue-700 transition"
                 >
                   <IoMail className="w-6 h-6" />
                 </a>
                 <a
                   onClick={() => {
-                    const phone = "919243188888";
+                    const phone = "919980511980";
                     const text = encodeURIComponent(
-                      "Hi, I need help with EPFdesk."
+                      "Hello EPFDesk,\n\n" +
+                        "I’d like to know more about your compliance services.\n\n" +
+                        "Company Name:\n" +
+                        "No. of Employees:\n" +
+                        "My Role:\n" +
+                        "Areas of Interest:"
                     );
                     window.open(
                       `https://wa.me/${phone}?text=${text}`,
@@ -130,6 +144,9 @@ export default function Footer() {
               <li>
                 <Link href="/aboutUs">About Us</Link>
               </li>
+              {/* <li>
+                <Link href="/hospitality">Hospitality</Link>
+              </li> */}
             </ul>
           </div>
         </div>

@@ -2544,6 +2544,17 @@ Eliminate Risk`,
 Licenses services in India. We handle Shop Act, CLRA, Factories Act, Contract Labour,
 BOCW, and all mandatory renewals. Ensure compliance, avoid penalties.`,
   },
+  {
+    id: 8,
+    gradientClass:
+      "linear-gradient(to bottom right, #fca5a5, #fdba74, #fcd34d)",
+    icon: "🌟",
+    title: `Hospitality Compliance: The Hidden 
+Cost of Guest Experience`,
+    subtitle: ` Workforce Limited offers specialized compliance for restaurants & 
+hotels. Master EPF, ESIC, POSH & labor laws. We protect your brand and manage high 
+attrition, from a single outlet to a national chain.`,
+  },
 ];
 
 export const verticalCardsEsic = {
@@ -4759,4 +4770,269 @@ principal employers with obtaining their registration certificate and helping co
 secure their labor licenses, along with all ongoing compliances, ensuring full adherence
 to the Act.`,
   },
+];
+
+export const verticalCardsHosp = {
+  mainTitle:
+    "The Cost of Chaos: Why Compliance Failures Cascade in Hospitality",
+  subTitleVer: `The hospitality industry's unique dynamics—namely its high attrition rate and the 
+sensitive nature of customer-facing work—transform small compliance errors into 
+significant, systemic risks.`,
+  mainSubtitleVer: "The High-Attrition Administrative Nightmare",
+  cardsVer: [
+    {
+      title: "The Brutal Truth",
+      subtitle: `Your industry’s average employee turnover of 80% per year is 
+a deep pain point. It creates an endless administrative vortex of creating, linking, 
+and managing EPF, ESIC, and UAN records for every new hire and every exit.`,
+      icon: "📚",
+      bubble: "Learn!",
+      bg: "bg-gradient-to-br from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "The Cost",
+      subtitle: `Up to 4 hours of HR/Manager time per employee, every time they 
+join or leave. For a 200-person hotel, that’s hundreds of lost hours annually. For a 
+chain of 10 hotels, this cost is immense.`,
+      icon: "🔨",
+      bubble: "Build!",
+      bg: "bg-gradient-to-br from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "The Guarantee",
+      subtitle: `: We automate this chaos, handling every EPF/ESIC exit and 
+joining in minutes, not hours, so you're never burdened by your most painful 
+operational reality`,
+      icon: "🌟",
+      bubble: "Shine!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+  ],
+};
+
+export const horizontalCardsHosp = {
+  mainSubtitleHor: "The Overtime & Tips Trap: A Trigger for Systemic Risk",
+  cardsHor: [
+    {
+      title: "The Problem",
+      subtitle: ` Accurately calculating statutory contributions on variable pay, tips, 
+and overtime is a manual minefield. These seemingly small errors are what labor 
+inspectors look for first`,
+      icon: "🔍",
+      bubble: "Discover!",
+      bg: "bg-gradient-to-br from-[#ff9a9e] to-[#fecfef]",
+    },
+    {
+      title: "The Consequence",
+      subtitle: ` A single incorrect calculation, when discovered, can trigger a 
+full-scale audit of all your statutory records. That one error cascades into a review 
+of your entire compliance history, uncovering every other small mistake and 
+exposing your entire business to massive backdated dues and penalties.`,
+      icon: "🎯",
+      bubble: "Focus!",
+      bg: "bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]",
+    },
+    {
+      title: "The Guarantee",
+      subtitle: `We integrate with your payroll to ensure 100% accurate, 
+flawless calculations every single time, defusing these financial time bombs 
+before they explode.`,
+      icon: "🤝",
+      bubble: "Collaborate!",
+      bg: "bg-gradient-to-br from-[#ffecd2] to-[#fcb69f]",
+    },
+    //     {
+    //       title: "Legal Scrutiny & Penalties",
+    //       subtitle: `Mishandling a complaint, procedural lapses, or
+    // non-compliance can lead to severe penalties for non-compliance with POSH
+    // Act fines up to ₹50,000, cancellation of business license and legal
+    // action against the employer.`,
+    //       icon: "💡",
+    //       bubble: "Innovate!",
+    //       bg: "bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]",
+    //     },
+  ],
+};
+
+export const largeCardsHosp = {
+  subTitle: "The POSH Reputation Bomb: The Ultimate Brand Killer",
+  cards: [
+    {
+      title: "The Problem",
+      subtitle: `In a customer-facing, shift-based environment, one single POSH 
+violation can instantly destroy a decade of brand building.`,
+      icon: "🛡️",
+      bubble: "Protect!",
+      bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
+    },
+    {
+      title: "The Consequence",
+      subtitle: `A ₹50,000 fine is the least of your worries. The real damage 
+is to your brand's reputation on social media and news outlets, the loss of trust 
+from employees and customers, and a potential talent drain in an industry where 
+staff are already hard to retain.`,
+      icon: "🔗",
+      bubble: "Integrate!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "The Guarantee",
+      subtitle: `We provide iron-clad POSH compliance and a dedicated, 
+independent hotline to protect your brand and your team's well-being, making 
+your commitment to a safe workplace visible to everyone`,
+      icon: "💼",
+      bubble: "Consult!",
+      bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
+    },
+  ],
+};
+
+export const pastelCardsHosp = {
+  subTitle: "End-to-End Compliance for Your Core Operations",
+  cards: [
+    {
+      title: "EPF/ESIC for a dynamic workforce",
+      subtitle: `We manage statutory contributions for 
+all staff, from permanent managers to part-time banquet staff and contract 
+workers, expertly handling the administrative nightmare of high attrition`,
+      icon: "🎨",
+      bubble: "Create!",
+      bg: "from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "Your licenses that can shut you down",
+      subtitle: `We manage the Shop & 
+Establishment Act registration and renewals for a single café or a multi-location 
+chain, ensuring continuous operational legality.`,
+      icon: "🌱",
+      bubble: "Grow!",
+      bg: "from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: " The POSH Act",
+      subtitle: `We draft your policy, train your staff (waiters to 
+management), and handle complaints with the legal precision needed in your 
+industry, safeguarding your brand's reputation.`,
+      icon: "🤝",
+      bubble: "Connect!",
+      bg: "from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "All other statutory requirements",
+      subtitle: `We ensure perfect compliance with 
+Minimum Wages Act, Payment of Gratuity Act, and LWF/PT for all your 
+locations, providing a single point of control for your entire compliance 
+landscape.`,
+      icon: "❤️",
+      bubble: "Consult!",
+      bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
+    },
+  ],
+};
+
+export const slidesLandingPage = [
+  {
+    name: "Richa Maheshwari",
+    title: "Manager, Delhi",
+    org: "Large Multinational Company",
+    message:
+      "EPFDesk.com has transformed our Gurgaon operations by handling all statutory compliance seamlessly, allowing my team to focus on strategic initiatives rather than portal management.",
+    gradient: "from-[#eafce9] to-[#c8f7c5]",
+    bgs: ["bg-[#a0d468]", "bg-[#4ecdc4]"],
+    bubble: "Seamless!",
+  },
+  {
+    name: "Adarsh Hoizal",
+    title: "",
+    org: "Large Staffing Company",
+    message:
+      "Managing statutory compliance for our workforce across multiple states was a nightmare until we partnered with EPFDesk.com – their pan-India support has streamlined everything.",
+    gradient: "from-[#fffae6] to-[#fceabb]",
+    bgs: ["bg-[#ffe66d]", "bg-[#ff6b6b]"],
+    bubble: "Streamlined!",
+  },
+  {
+    name: "Amith Chitrapur",
+    title: "Chartered Accountant",
+    org: "Multiple Clients Across India",
+    message:
+      "EPFDesk.com delivers seamless multi-state compliance support for all my clients. Their expertise in statutory regulations has eliminated my biggest operational headache.",
+    gradient: "from-[#f8f0ff] to-[#ecdfff]",
+    bgs: ["bg-[#d299c2]", "bg-[#a18cd1]"],
+    bubble: "Reliable!",
+  },
+  {
+    name: "Neeta",
+    title: "Director",
+    org: "Technical Services Company",
+    message:
+      "With our teams spread across India, EPFDesk.com has been instrumental in maintaining our 100% audit success rate with new registrations and linking done seamlessly.",
+    gradient: "from-[#fceff1] to-[#ffd1dc]",
+    bgs: ["bg-[#ff6b6b]", "bg-[#ffe66d]"],
+    bubble: "Audit-Proof!",
+  },
+];
+
+export const slidesLandingHosp = [
+  {
+    name: "Neeta",
+    title: "HR Head",
+    org: "Regional Hotel Chain",
+    message:
+      "EPFDesk transformed our compliance from a nightmare to a seamless operation. Their expertise in handling our multi-location staff has completely eliminated our compliance worries.",
+    gradient: "from-[#eafce9] to-[#c8f7c5]",
+    bgs: ["bg-[#a0d468]", "bg-[#4ecdc4]"],
+    bubble: "Seamless!",
+  },
+  {
+    name: "Rajesh",
+    title: "Owner,Goa",
+    org: "Boutique Restaurant",
+    message:
+      "As a single-outlet owner, a fine would have been devastating. EPFDesk took away all the fear, so I can focus on my guests.",
+    gradient: "from-[#fffae6] to-[#fceabb]",
+    bgs: ["bg-[#ffe66d]", "bg-[#ff6b6b]"],
+    bubble: "Streamlined!",
+  },
+  {
+    name: "Vikram Kumar",
+    title: "Regional Commercial Director",
+    org: "Large 5-Star Hotel Group",
+    message:
+      "The peace of mind knowing our POSH compliance is handled by experts who guarantee 100% accuracy and timely filings is invaluable for our brand.",
+    gradient: "from-[#f8f0ff] to-[#ecdfff]",
+    bgs: ["bg-[#d299c2]", "bg-[#a18cd1]"],
+    bubble: "Reliable!",
+  },
+];
+
+
+export const hospFaq = [
+  {
+    question: "We have 200+ employees across 5 cities. Too complex?",
+    answer: ` Our biggest client has 2,000 employees across 15 cities, including 5-star chains. 
+You're simple`,
+  },
+  {
+    question: "We get raided tomorrow?",
+    answer: `We'll be there in 2 hours with all documents. Our emergency response has saved 47 
+hospitality businesses from closure.`,
+  },
+  {
+    question:
+      " What about my odd Goa or Kerala state rules?",
+    answer: `We operate in all 29 states. Kerala's Shops Act? We wrote the compliance guide.`,
+  },
+  {
+    question: "How fast can you start?",
+    answer: `48 hours to full compliance. We've done it 500+ times`,
+  },
+  {
+    question: "Our biggest pain is high staff attrition. How do you help?",
+    answer: `We directly solve this. Our systems automate the creation, linking, and management 
+of EPF and ESIC records for every joiner and exit, turning your biggest administrative 
+burden into a seamless background task. This ensures perfect compliance, even with a 
+high-turnover workforce.`,
+  },
+ 
 ];

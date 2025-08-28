@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 
 import LinkButtons from "./whatsApp";
 import RawMazeGame from "./mazeHero";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 function ZendeskHeroStack() {
   return (
@@ -38,8 +39,8 @@ export default function Hero({ setShowFloating }) {
     };
   }, [setShowFloating]);
   return (
-    <div className="relative">
-      <section className="bg-white pt-28 md:pt-32 lg:pt-32 pb-12 md:pb-10 lg:pb-10 px-6 md:px-12">
+    <div className="relative pt-32 md:pt-36 lg:pt-36">
+      <section className="bg-white pb-12 md:pb-10 lg:pb-10 px-6 md:px-12">
         <div className="flex flex-col md:flex-col lg:flex-col justify-center items-center max-w-7xl mx-auto gap-4">
           <div className="w-full md:w-2/3 text-center">
             <h1 className="text-4xl sm:text-5xl font-bold text-black mb-8">

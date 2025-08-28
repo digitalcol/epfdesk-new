@@ -7,7 +7,7 @@ import MazeEscapeSection from "@/components/mazeEscapeSection";
 import StackedCards from "@/components/scrollCards";
 import ServiceCards from "@/components/serviceCards";
 import CustomerCarousel from "@/components/customerCarousel";
-import { largeCardsLanding } from "@/utils/data";
+import { largeCardsLanding, slidesLandingPage } from "@/utils/data";
 import { Toaster } from "react-hot-toast";
 import Image from "next/image";
 
@@ -39,7 +39,7 @@ export default function Home() {
         <StackedCards />
       </FadeInWhenVisible>
       <FadeInWhenVisible>
-        <CustomerCarousel/>
+        <CustomerCarousel slides={slidesLandingPage}/>
       </FadeInWhenVisible>
       <FadeInWhenVisible>
         <LimitedCapacitySection />

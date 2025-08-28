@@ -137,8 +137,15 @@ const LinkButtons = () => {
       <div className="my-5 flex flex-row lg:items-center justify-center gap-2 md:flex-row">
         <button
           onClick={() => {
-            const phone = "919243188888";
-            const text = encodeURIComponent("Hi, I need help with EPFdesk.");
+            const phone = "919980511980";
+            const text = encodeURIComponent(
+              "Hello EPFDesk,\n\n" +
+                "I’d like to know more about your compliance services.\n\n" +
+                "Company Name:\n" +
+                "No. of Employees:\n" +
+                "My Role:\n" +
+                "Areas of Interest:"
+            );
             window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
           }}
           className="flex h-[50px] w-[155px] cursor-pointer items-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-4 text-black shadow-lg transition hover:bg-[rgb(209,244,112)]"

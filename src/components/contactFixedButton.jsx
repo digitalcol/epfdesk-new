@@ -1,7 +1,8 @@
-"use client"
+"use client";
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { FaWpforms } from "react-icons/fa";
 
 import { toast } from "react-hot-toast";
 export default function FloatingFormToggle({ animate = true }) {
@@ -15,10 +16,10 @@ export default function FloatingFormToggle({ animate = true }) {
     findUs: "",
   });
 
-    const formDataWithType = {
-  ...formData,
-  formType: "contact",
-};
+  const formDataWithType = {
+    ...formData,
+    formType: "contact",
+  };
   const [errors, setErrors] = useState({});
 
   const validate = () => {
@@ -31,7 +32,8 @@ export default function FloatingFormToggle({ animate = true }) {
     if (!formData.email.trim()) {
       newErrors.email = "Email is required.";
     } else if (
-      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email) || /@gmail\.com$/i.test(formData.email)
+      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email) ||
+      /@gmail\.com$/i.test(formData.email)
     ) {
       newErrors.email = "Invalid email format.";
     }
@@ -50,16 +52,14 @@ export default function FloatingFormToggle({ animate = true }) {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-   
     setFormData((prev) => ({
       ...prev,
       [name]: value,
     }));
 
-  
     setErrors((prev) => ({
       ...prev,
-      [name]: "", 
+      [name]: "",
     }));
   };
 
@@ -106,35 +106,35 @@ export default function FloatingFormToggle({ animate = true }) {
   //   setIsOpen(false);
   // };
 
-const API_BASE =
-  process.env.NODE_ENV === "development"
-    ? "http://localhost/epfdesk/server"
-    : "https://epfdesk.com/server";
+  const API_BASE =
+    process.env.NODE_ENV === "development"
+      ? "http://localhost/epfdesk/server"
+      : "https://epfdesk.com/server";
 
-//   const handleSubmit = async (e) => {
-//   e.preventDefault();
+  //   const handleSubmit = async (e) => {
+  //   e.preventDefault();
 
-//   try {
-//     const response = await fetch(`${API_BASE}/process_form.php`, {
-//       method: "POST",
-//       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-//       body: new URLSearchParams(formData).toString(),
-//     });
+  //   try {
+  //     const response = await fetch(`${API_BASE}/process_form.php`, {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //       body: new URLSearchParams(formData).toString(),
+  //     });
 
-//     const result = await response.json();
-//     console.log(result);
-//     if (result.success) {
-//       alert("✅ Message sent successfully!");
-//     } else {
-//       alert("❌ " + result.message);
-//     }
-//   } catch (error) {
-//     console.error("Error:", error);
-//     alert("❌ Something went wrong.");
-//   }
-//   setIsOpen(false);
-// };
- const handleSubmit = async (e) => {
+  //     const result = await response.json();
+  //     console.log(result);
+  //     if (result.success) {
+  //       alert("✅ Message sent successfully!");
+  //     } else {
+  //       alert("❌ " + result.message);
+  //     }
+  //   } catch (error) {
+  //     console.error("Error:", error);
+  //     alert("❌ Something went wrong.");
+  //   }
+  //   setIsOpen(false);
+  // };
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = validate();
 
@@ -186,8 +186,15 @@ const API_BASE =
         >
           <button
             onClick={() => {
-              const phone = "919243188888";
-              const text = encodeURIComponent("Hi, I need help with EPFdesk.");
+              const phone = "919980511980";
+              const text = encodeURIComponent(
+                "Hello EPFDesk,\n\n" +
+                  "I’d like to know more about your compliance services.\n\n" +
+                  "Company Name:\n" +
+                  "No. of Employees:\n" +
+                  "My Role:\n" +
+                  "Areas of Interest:"
+              );
               window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
             }}
             className="flex h-[50px] w-[50px] sm:w-[165px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-0 md:p-4 lg:p-4 text-black shadow-lg transition hover:bg-[rgb(209,244,112)]"
@@ -200,9 +207,25 @@ const API_BASE =
             onClick={() => setIsOpen(true)}
             className="flex h-[50px] w-[50px] sm:w-[165px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-0 md:p-4 lg:p-4 text-black shadow-lg transition hover:bg-[rgb(209,244,112)]"
           >
-            <EnvelopeIcon className="size-5" />
+            <FaWpforms className="size-5" />
             <span className="hidden sm:inline">Contact Sales</span>
           </button>
+          <a
+            href={`mailto:hello@epfdesk.com?subject=${encodeURIComponent(
+              "Inquiry about Compliance Services"
+            )}&body=${encodeURIComponent(
+              "Hello EPFDesk,\n\n" +
+                "I’d like to know more about your compliance services.\n\n" +
+                "Company Name:\n" +
+                "No. of Employees:\n" +
+                "My Role:\n" +
+                "Areas of interest:"
+            )}`}
+            className="flex h-[50px] w-[50px] sm:w-[165px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-0 md:p-4 lg:p-4 text-black shadow-lg transition hover:bg-[rgb(209,244,112)]"
+          >
+            <EnvelopeIcon className="size-5" />
+            <span className="hidden sm:inline">Email Us</span>
+          </a>
         </div>
       </>
 
@@ -377,7 +400,9 @@ const API_BASE =
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium">Work email</label>
+                  <label className="block text-sm font-medium">
+                    Work email
+                  </label>
                   <input
                     type="email"
                     name="email"
@@ -409,7 +434,9 @@ const API_BASE =
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium">Company size</label>
+                  <label className="block text-sm font-medium">
+                    Company size
+                  </label>
                   <select
                     name="employees"
                     value={formData.employees}

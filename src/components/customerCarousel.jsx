@@ -5,50 +5,9 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-const slides = [
-  {
-    name: "Richa Maheshwari",
-    title: "Manager, Delhi",
-    org: "Large Multinational Company",
-    message:
-      "EPFDesk.com has transformed our Gurgaon operations by handling all statutory compliance seamlessly, allowing my team to focus on strategic initiatives rather than portal management.",
-    gradient: "from-[#eafce9] to-[#c8f7c5]",
-    bgs: ["bg-[#a0d468]", "bg-[#4ecdc4]"],
-    bubble: "Seamless!",
-  },
-  {
-    name: "Adarsh Hoizal",
-    title: "",
-    org: "Large Staffing Company",
-    message:
-      "Managing statutory compliance for our workforce across multiple states was a nightmare until we partnered with EPFDesk.com – their pan-India support has streamlined everything.",
-    gradient: "from-[#fffae6] to-[#fceabb]",
-    bgs: ["bg-[#ffe66d]", "bg-[#ff6b6b]"],
-    bubble: "Streamlined!",
-  },
-  {
-    name: "Amith Chitrapur",
-    title: "Chartered Accountant",
-    org: "Multiple Clients Across India",
-    message:
-      "EPFDesk.com delivers seamless multi-state compliance support for all my clients. Their expertise in statutory regulations has eliminated my biggest operational headache.",
-    gradient: "from-[#f8f0ff] to-[#ecdfff]",
-    bgs: ["bg-[#d299c2]", "bg-[#a18cd1]"],
-    bubble: "Reliable!",
-  },
-  {
-    name: "Neeta",
-    title: "Director",
-    org: "Technical Services Company",
-    message:
-      "With our teams spread across India, EPFDesk.com has been instrumental in maintaining our 100% audit success rate with new registrations and linking done seamlessly.",
-    gradient: "from-[#fceff1] to-[#ffd1dc]",
-    bgs: ["bg-[#ff6b6b]", "bg-[#ffe66d]"],
-    bubble: "Audit-Proof!",
-  },
-];
 
-const TestimonialSlider = () => {
+
+const TestimonialSlider = ({slides}) => {
   const [isReady, setIsReady] = useState(false);
   const paginationRef = useRef(null);
 
