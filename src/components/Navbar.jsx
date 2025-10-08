@@ -29,7 +29,7 @@ export default function Navbar({ banner }) {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
-    <AnnouncementBar />
+ 
     <header
       className={`fixed z-50 w-full border-b border-gray-300 px-5 backdrop-blur-md ${
         scrolled ? "bg-white/80 shadow" : "bg-transparent"

@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { FaRegEnvelope } from "react-icons/fa6";
+import { FaPhone } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 
 import Modal from "./modal";
@@ -135,7 +135,7 @@ const LinkButtons = () => {
   return (
     <>
       <div className="my-5 flex flex-row lg:items-center justify-center gap-2 md:flex-row">
-        <button
+        {/* <button
           onClick={() => {
             const phone = "919980511980";
             const text = encodeURIComponent(
@@ -152,12 +152,51 @@ const LinkButtons = () => {
         >
           <IoLogoWhatsapp className="size-6" /> WhatsApp
         </button>
-
         <button
-          onClick={() => setIsOpen(true)}
+          onClick={() => (window.location.href = "tel:+919980511980")}
           className="flex h-[50px] w-[155px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-3 text-black shadow-lg transition hover:bg-[rgb(209,244,112)]"
         >
-          <FaRegEnvelope size={22} /> Contact Sales
+          <FaPhone size={22} /> Call Us
+        </button> */}
+        <button
+          onClick={() => {
+            const phone = "919980511980";
+            const text = encodeURIComponent(
+              "Hello EPFDesk,\n\n" +
+                "I’d like to know more about your compliance services.\n\n" +
+                "Company Name:\n" +
+                "No. of Employees:\n" +
+                "My Role:\n" +
+                "Areas of Interest:"
+            );
+            window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
+          }}
+          className="group relative flex h-[50px] w-[180px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-4 text-black shadow-lg transition"
+        >
+          <IoLogoWhatsapp className="size-6 transition-transform group-hover:scale-0" />
+          <span className="transition-opacity group-hover:opacity-0">
+            WhatsApp
+          </span>
+          <span className="absolute opacity-0 transition-opacity group-hover:opacity-100">
+            +91 99805 11980
+          </span>
+        </button>
+
+        {/* Call Button */}
+        <button
+          onClick={() => (window.location.href = "tel:+919980511980")}
+          className="group relative flex h-[50px] w-[180px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-4 text-black shadow-lg transition"
+        >
+          <FaPhone
+            size={22}
+            className="transition-transform group-hover:scale-0"
+          />
+          <span className="transition-opacity group-hover:opacity-0">
+            Call Us
+          </span>
+          <span className="absolute opacity-0 transition-opacity group-hover:opacity-100">
+            +91 99805 11980
+          </span>
         </button>
       </div>
 
