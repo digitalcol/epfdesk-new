@@ -12,12 +12,12 @@ import { Toaster } from "react-hot-toast";
 import Image from "next/image";
 
 export const metadata = {
-  title: "EPF Desk | Simplifying EPF Compliance & Payroll Services for Businesses in India",
+  title: "EPF Desk | Simplifying EPF Compliance for Businesses in India",
   description:
     "EPFDesk.com frees your HR and Finance teams to focus on what they do best: driving growth, developing talent, and building the future of your organization. ",
   alternates: { canonical: "https://epfdesk.com" },
   openGraph: {
-    title: "EPF Desk | Simplifying EPF Compliance & Payroll Services for Businesses in India",
+    title: "EPF Desk | Simplifying EPF Compliance for Businesses in India",
     url: "https://epfdesk.com",
   },
 };

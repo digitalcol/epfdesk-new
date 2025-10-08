@@ -2,7 +2,7 @@
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { FaWpforms } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa6";
 
 import { toast } from "react-hot-toast";
 export default function FloatingFormToggle({ animate = true }) {
@@ -184,7 +184,7 @@ export default function FloatingFormToggle({ animate = true }) {
             animate ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
           }`}
         >
-          <button
+          {/* <button
             onClick={() => {
               const phone = "919980511980";
               const text = encodeURIComponent(
@@ -209,6 +209,43 @@ export default function FloatingFormToggle({ animate = true }) {
           >
             <FaWpforms className="size-5" />
             <span className="hidden sm:inline">Contact Sales</span>
+          </button> */}
+          <button
+            onClick={() => {
+              const phone = "919980511980";
+              const text = encodeURIComponent(
+                "Hello EPFDesk,\n\n" +
+                  "I’d like to know more about your compliance services.\n\n" +
+                  "Company Name:\n" +
+                  "No. of Employees:\n" +
+                  "My Role:\n" +
+                  "Areas of Interest:"
+              );
+              window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
+            }}
+            className="group relative flex h-[50px] w-[50px] sm:w-[165px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] px-0 sm:px-4 text-black shadow-lg transition"
+          >
+            <IoLogoWhatsapp className="size-5 sm:size-6 transition-transform sm:group-hover:scale-0" />
+            <span className="hidden sm:inline transition-opacity sm:group-hover:opacity-0">
+              WhatsApp
+            </span>
+            <span className="absolute hidden sm:inline opacity-0 transition-opacity sm:group-hover:opacity-100">
+              +91 99805 11980
+            </span>
+          </button>
+
+          {/* Contact Us Button */}
+          <button
+            onClick={() => (window.location.href = "tel:+919980511980")}
+            className="group relative flex h-[50px] w-[50px] sm:w-[165px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] px-0 sm:px-4 text-black shadow-lg transition"
+          >
+            <FaPhone className="size-5 sm:size-6 transition-transform sm:group-hover:scale-0" />
+            <span className="hidden sm:inline transition-opacity sm:group-hover:opacity-0">
+              Contact Us
+            </span>
+            <span className="absolute hidden sm:inline opacity-0 transition-opacity sm:group-hover:opacity-100">
+              +91 99805 11980
+            </span>
           </button>
           <a
             href={`mailto:hello@epfdesk.com?subject=${encodeURIComponent(
