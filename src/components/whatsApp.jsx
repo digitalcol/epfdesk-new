@@ -160,7 +160,7 @@ const LinkButtons = () => {
         </button> */}
         <button
           onClick={() => {
-            const phone = "919980511980";
+            const phone = "919591773588";
             const text = encodeURIComponent(
               "Hello EPFDesk,\n\n" +
                 "I’d like to know more about your compliance services.\n\n" +
@@ -178,13 +178,13 @@ const LinkButtons = () => {
             WhatsApp
           </span>
           <span className="absolute opacity-0 transition-opacity group-hover:opacity-100">
-            +91 99805 11980
+            +919591773588
           </span>
         </button>
 
         {/* Call Button */}
         <button
-          onClick={() => (window.location.href = "tel:+919980511980")}
+          onClick={() => (window.location.href = "tel:+919591773588")}
           className="group relative flex h-[50px] w-[180px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-4 text-black shadow-lg transition"
         >
           <FaPhone
@@ -195,7 +195,7 @@ const LinkButtons = () => {
             Call Us
           </span>
           <span className="absolute opacity-0 transition-opacity group-hover:opacity-100">
-            +91 99805 11980
+            +919591773588
           </span>
         </button>
       </div>
