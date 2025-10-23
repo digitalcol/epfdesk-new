@@ -95,7 +95,7 @@ export default function Footer() {
                 </a>
                 <a
                   onClick={() => {
-                    const phone = "919591773588";
+                    const phone = "919945933333";
                     const text = encodeURIComponent(
                       "Hello EPFDesk,\n\n" +
                         "I’d like to know more about your compliance services.\n\n" +
