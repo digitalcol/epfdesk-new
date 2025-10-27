@@ -67,6 +67,7 @@ import Footer from "@/components/Footer";
 import HeroObserver from "@/components/heroObserver";
 import LocationBanner from "@/components/LocationBanner";
 import { Analytics } from "@vercel/analytics/react";
+import Script from "next/script";
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
@@ -79,6 +80,21 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+        <head>
+        {/* Google Analytics Script */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-WMNLTE5RKQ"
+        />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-WMNLTE5RKQ');
+          `}
+        </Script>
+      </head>
       <body>
         {!hideLayout && <Navbar />}
         <main>
