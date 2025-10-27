@@ -29,7 +29,7 @@ const FaqAccordion = ({ faqs, title = "Frequently Asked Questions" }) => {
         {title}
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 gap-4">
         {faqs.map((faq, index) => (
           <div
             key={index}

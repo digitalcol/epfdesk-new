@@ -1,6 +1,14 @@
 // components/Footer.tsx
-import { FaLinkedin, FaYoutube } from "react-icons/fa";
+"use client"
 import { FiArrowRight } from "react-icons/fi";
+import {
+  FaInstagram,
+  FaLinkedin,
+  FaXTwitter,
+  FaYoutube,
+} from "react-icons/fa6";
+import { IoMail } from "react-icons/io5";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 export default function Footer() {
   return (
@@ -15,14 +23,13 @@ export default function Footer() {
             Questions?
           </h2>
           <p className="text-xl sm:text-3xl font-semibold text-[#3a2f2c] max-w-md">
-          Passionate about keeping industries safe and compliant? Join us in transforming how businesses manage regulations.
+            Passionate about keeping industries safe and compliant? Join us in
+            transforming how businesses manage regulations.
           </p>
         </div>
 
         {/* Right content */}
-        <div className="flex justify-center items-center relative">
-         
-
+        <div className="flex flex-col justify-center items-center relative">
           {/* CTA */}
           <a
             href="mailto:hello@epfdesk.com"
@@ -30,33 +37,89 @@ export default function Footer() {
           >
             Get in touch <FiArrowRight className="text-3xl sm:text-6xl" />
           </a>
+          <span className="text-[20px] mt-2 font-semibold">hello@epfdesk.com</span>
         </div>
-      
       </div>
-  <div className="s__cta__shape"></div>
+      <div className="s__cta__shape"></div>
       {/* Bottom section */}
       <div className="border-t border-[#3a2f2c] mt-12 pt-4 flex flex-col md:flex-row items-center justify-between text-sm text-[#3a2f2c] gap-4">
         {/* Left Links */}
         <div className="flex items-center gap-4">
-          <a href="#" className="hover:opacity-70">
+          {/* <a href="#" className="hover:opacity-70">
             <FaLinkedin className="text-xl" />
           </a>
           <a href="#" className="hover:opacity-70">
             <FaYoutube className="text-xl" />
+          </a> */}
+          <a
+            href="https://www.instagram.com/epfdesk/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-500 hover:text-pink-600 transition"
+          >
+            <FaInstagram className="w-6 h-6" />
           </a>
-          <span className="w-1 h-1 bg-gray-400 rounded-full" />
-          <a href="#" className="hover:underline">
-            COOKIE POLICY
+          <a
+            href="https://x.com/epfdesk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-500 hover:text-sky-500 transition"
+          >
+            <FaXTwitter className="w-6 h-6" />
           </a>
-          <a href="#" className="hover:underline">
-            PRIVACY POLICY
+          <a
+            href="https://www.linkedin.com/company/108133988/admin/dashboard/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-500 hover:text-blue-700 transition"
+          >
+            <FaLinkedin className="w-6 h-6" />
+          </a>
+          <a
+            href="https://www.youtube.com/@epfdesk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-500 hover:text-red-700 transition"
+          >
+            <FaYoutube className="w-6 h-6" />
+          </a>
+          <a
+            href={`mailto:hello@epfdesk.com?subject=${encodeURIComponent(
+              "Inquiry about Compliance Services"
+            )}&body=${encodeURIComponent(
+              "Hello EPFDesk,\n\n" +
+                "I’d like to know more about your compliance services.\n\n" +
+                "Company Name:\n" +
+                "No. of Employees:\n" +
+                "My Role:\n" +
+                "Areas of interest:"
+            )}`}
+            className="text-gray-500 hover:text-blue-700 transition"
+          >
+            <IoMail className="w-6 h-6" />
+          </a>
+          <a
+            onClick={() => {
+              const phone = "919945933333";
+              const text = encodeURIComponent(
+                "Hello EPFDesk,\n\n" +
+                  "I’d like to know more about your compliance services.\n\n" +
+                  "Company Name:\n" +
+                  "No. of Employees:\n" +
+                  "My Role:\n" +
+                  "Areas of Interest:"
+              );
+              window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
+            }}
+            className="text-gray-500 hover:text-green-700 transition cursor-pointer"
+          >
+            <IoLogoWhatsapp className="w-6 h-6" />
           </a>
         </div>
 
         {/* Right Text */}
         <div className="flex items-center gap-2">
-          <span>2025 © BY KÅD NOD AB</span>
-          <span className="font-semibold">wrk.</span>
+          <span>2025 © Workforce Limited</span>
         </div>
       </div>
     </footer>

@@ -178,7 +178,7 @@ const LinkButtons = () => {
             WhatsApp
           </span>
           <span className="absolute opacity-0 transition-opacity group-hover:opacity-100">
-           +919945933333
+          +919945933333
           </span>
         </button>
 
@@ -195,7 +195,7 @@ const LinkButtons = () => {
             Call Us
           </span>
           <span className="absolute opacity-0 transition-opacity group-hover:opacity-100">
-          +919945933333
+            +919945933333
           </span>
         </button>
       </div>
