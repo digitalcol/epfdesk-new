@@ -5037,9 +5037,9 @@ high-turnover workforce.`,
 // Data starts from here for hospitality links..,
 
 export const videoHighlightDataHospitality = {
-  heading: "The True Cost of a Seamless Guest Experience",
+  heading: "Every License. Every Renewal. Every Closure.",
   description:
-    "The hospitality industry is huge and highly regulated, so even one compliance lapse can cause major financial and reputational damage.",
+    "Operate legally and confidently — from your first FSSAI registration to your last Fire NOC renewal.",
   coverImage: "https://nodcoding.com/wp-content/uploads/2024/09/Nod-Intro.jpg",
   alt: "hospitality",
 };
@@ -5081,41 +5081,77 @@ export const videoHighlightDataManufacturing = {
 };
 
 export const dataTableHospitality = [
+  // {
+  //   threshold: "1+ employees",
+  //   law: "GST Act, 2017 (Turnover-based)",
+  //   meaning:
+  //     "You must register and file GST returns, regardless of employee count.",
+  // },
+  // {
+  //   threshold: "1+ employees",
+  //   law: "Shop & Establishment Act",
+  //   meaning:
+  //     "You must register your premises and comply with rules on working hours and leave.",
+  // },
+  // {
+  //   threshold: "10+ employees",
+  //   law: "POSH Act, 2013",
+  //   meaning:
+  //     "You must constitute an Internal Committee and provide regular employee training.",
+  // },
+  // {
+  //   threshold: "10+ employees",
+  //   law: "ESIC Act, 1948 (in notified areas)",
+  //   meaning:
+  //     "You must register your business and contribute for employees with a monthly wage up to ₹21,000.",
+  // },
+  // {
+  //   threshold: "20+ employees",
+  //   law: "EPF Act, 1952",
+  //   meaning:
+  //     "You must register your business and contribute for all eligible employees.",
+  // },
+  // {
+  //   threshold: "20+ contract workers",
+  //   law: "CLRA Act, 1970",
+  //   meaning:
+  //     "You must get a Principal Employer certificate and ensure your contractor has a labor license.",
+  // },
   {
-    threshold: "1+ employees",
-    law: "GST Act, 2017 (Turnover-based)",
+    threshold: "Licenses & Registrations",
+    law: "Examples: FSSAI, Factory license, Boiler, PCB consents",
     meaning:
-      "You must register and file GST returns, regardless of employee count.",
+      "Registration, government approvals, periodic renewals and inspection readiness (case: F&B chain, Manufacturer).",
   },
   {
-    threshold: "1+ employees",
-    law: "Shop & Establishment Act",
+    threshold: "Operational Filings & Inspections",
+    law: "Submission → Inspection → Approval workflows",
     meaning:
-      "You must register your premises and comply with rules on working hours and leave.",
+      "Sequenced filings, inspection scheduling and approval tracking with department badges and officer telemetry.",
   },
   {
-    threshold: "10+ employees",
-    law: "POSH Act, 2013",
+    threshold: "Renewals, Amendments & Closures",
+    law: "Auto-renewals / Amendments",
     meaning:
-      "You must constitute an Internal Committee and provide regular employee training.",
+      "Renewals auto-tracked and pre-filed; Workforce schedules filings to ensure zero missed renewals.",
   },
   {
-    threshold: "10+ employees",
-    law: "ESIC Act, 1948 (in notified areas)",
+    threshold: "Tracking & Audit Trail",
+    law: "Document vault & tamper-evident history",
     meaning:
-      "You must register your business and contribute for employees with a monthly wage up to ₹21,000.",
+      "Real-time status, document vault, timestamps, SLA alerts and provenance for audit readiness.",
   },
   {
-    threshold: "20+ employees",
-    law: "EPF Act, 1952",
+    threshold: "Industry & State Coverage",
+    law: "State × Industry × Act matrix (36 states/UTs · 30+ industries)",
     meaning:
-      "You must register your business and contribute for all eligible employees.",
+      "Instant scoping — what applies to me? Tailored modules for Hospitality, Healthcare, Education, Manufacturing and more.",
   },
   {
-    threshold: "20+ contract workers",
-    law: "CLRA Act, 1970",
+    threshold: "Regulatory Intelligence",
+    law: "Regulatory Intelligence Graph",
     meaning:
-      "You must get a Principal Employer certificate and ensure your contractor has a labor license.",
+      "Each filing becomes data — timelines, rejections, inspection notes and fees feed intelligence to speed and harden future executions.",
   },
 ];
 
@@ -5235,28 +5271,51 @@ export const dataTableManufacturing = [
 ];
 
 export const uspDataHospitality = {
-  mainTitle:
-    "The Cost of Chaos: Why Compliance Failures Cascade in Hospitality",
+  // mainTitle:
+  //   "The Cost of Chaos: Why Compliance Failures Cascade in Hospitality",
+  // cards: [
+  //   {
+  //     title: "The High-Attrition Administrative Nightmare",
+  //     description:
+  //       "High employee turnover—around 80% annually—causes massive administrative work managing EPF, ESIC, and UAN records.",
+  //   },
+  //   {
+  //     title: "The GST Reconciliation Nightmare",
+  //     description:
+  //       "A GSTR-2B mismatch isn’t a software glitch but a data issue that threatens your Input Tax Credit and cash flow.",
+  //   },
+  //   {
+  //     title: "The Overtime & Tips Trap",
+  //     description:
+  //       "One mistake can trigger a full audit of all statutory records, exposing hidden errors and heavy penalties. Automated payroll integration ensures precise, compliant calculations every time.",
+  //   },
+  //   {
+  //     title: "The POSH Reputation Bomb",
+  //     description:
+  //       "A single POSH violation in a customer-facing, shift-based workplace can undo years of brand reputation. Robust POSH compliance and an independent hotline safeguard your brand and workforce.",
+  //   },
+  // ],
+  mainTitle: "A Regulatory Execution Engine",
   cards: [
     {
-      title: "The High-Attrition Administrative Nightmare",
+      title: "Discover",
       description:
-        "High employee turnover—around 80% annually—causes massive administrative work managing EPF, ESIC, and UAN records.",
+        "Know every compliance you need — Workforce maps every applicable requirement by state, industry, and scale.",
     },
     {
-      title: "The GST Reconciliation Nightmare",
+      title: "Execute",
       description:
-        "A GSTR-2B mismatch isn’t a software glitch but a data issue that threatens your Input Tax Credit and cash flow.",
+        "Registrations, inspections, approvals — handled digitally and on-ground with verified liaison network.",
     },
     {
-      title: "The Overtime & Tips Trap",
+      title: "Track",
       description:
-        "One mistake can trigger a full audit of all statutory records, exposing hidden errors and heavy penalties. Automated payroll integration ensures precise, compliant calculations every time.",
+        "Officer-level progress, document vault, SLAs and file provenance — every action logged and traceable.",
     },
     {
-      title: "The POSH Reputation Bomb",
+      title: "Sustain",
       description:
-        "A single POSH violation in a customer-facing, shift-based workplace can undo years of brand reputation. Robust POSH compliance and an independent hotline safeguard your brand and workforce.",
+        "Renewals, amendments and closures auto-tracked and pre-filed — zero missed deadlines, perpetual compliance.",
     },
   ],
 };
@@ -5356,35 +5415,59 @@ export const uspDataManufacturing = {
 };
 
 export const slidesHospitality = [
+  // {
+  //   title: "GST: We are the operators",
+  //   text: "Meticulous reconciliation, return filing, and audit defense.",
+  //   image:
+  //     "https://nodcoding.com/wp-content/uploads/2024/07/home-experience-1920x2075.jpg",
+  // },
+  // {
+  //   title: "EPF/ESIC for a dynamic workforce",
+  //   text: " We manage statutory contributions for all staff, from permanent managers to part-time banquet staff and contract workers, expertly handling the administrative nightmare of high attrition.",
+  //   image:
+  //     "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
+  // },
+  // {
+  //   title: "Your licenses that can shut you down",
+  //   text: " We manage the Shop & Establishment Act registration and renewals for a single café or a multi-location chain, ensuring continuous operational legality.",
+  //   image:
+  //     "https://nodcoding.com/wp-content/uploads/2024/07/home-islands-1920x2075.jpg",
+  // },
+  // {
+  //   title: "The POSH Act",
+  //   text: "We draft your policy, train your staff (waiters to management), and handle complaints with the legal precision needed in your industry, safeguarding your brand's reputation.",
+  //   image:
+  //     "https://nodcoding.com/wp-content/uploads/2024/07/home-experience-1920x2075.jpg",
+  // },
+  // {
+  //   title: " All other statutory requirements",
+  //   text: "  We ensure perfect compliance with Minimum Wages Act, Payment of Gratuity Act, and LWF/PT for all your locations, providing a single point of control for your entire compliance landscape.",
+  //   image:
+  //     "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
+  // },
   {
-    title: "GST: We are the operators",
-    text: "Meticulous reconciliation, return filing, and audit defense.",
+    title: "Map — What Applies to Me?",
+    text: "State × Industry × Act matrix lights up with instant scoping. Workforce maps every applicable law so you always know what applies — across 36 states & UTs and 30+ industries.",
     image:
       "https://nodcoding.com/wp-content/uploads/2024/07/home-experience-1920x2075.jpg",
   },
   {
-    title: "EPF/ESIC for a dynamic workforce",
-    text: " We manage statutory contributions for all staff, from permanent managers to part-time banquet staff and contract workers, expertly handling the administrative nightmare of high attrition.",
+    title: "Workflow — From Submission to Approval",
+    text: "Each filing follows a sequenced timeline — submission, inspection, approval — with department badges, challans, and officer tracking built-in. No missed steps, no manual chasers.",
     image:
       "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
   },
   {
-    title: "Your licenses that can shut you down",
-    text: " We manage the Shop & Establishment Act registration and renewals for a single café or a multi-location chain, ensuring continuous operational legality.",
+    title: "Tracking — Officer-Level Telemetry",
+    text: "Monitor every file: officer name, timestamps, remarks, and SLA status. Each document is versioned in a secure vault — creating a tamper-evident audit trail automatically.",
     image:
       "https://nodcoding.com/wp-content/uploads/2024/07/home-islands-1920x2075.jpg",
   },
   {
-    title: "The POSH Act",
-    text: "We draft your policy, train your staff (waiters to management), and handle complaints with the legal precision needed in your industry, safeguarding your brand's reputation.",
+    title: "Renewals — Auto-Filed & Scheduled",
+    text: "Every registration and license is auto-tracked for expiry. Workforce pre-files renewals, reconciles fees, and keeps continuity without intervention — zero downtime, zero penalties.",
     image:
-      "https://nodcoding.com/wp-content/uploads/2024/07/home-experience-1920x2075.jpg",
-  },
-  {
-    title: " All other statutory requirements",
-    text: "  We ensure perfect compliance with Minimum Wages Act, Payment of Gratuity Act, and LWF/PT for all your locations, providing a single point of control for your entire compliance landscape.",
-    image:
-      "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-islands-1920x2075.jpg",
   },
 ];
 
@@ -5593,6 +5676,60 @@ export const faqsHospitality = [
   {
     question: "Can you handle our GST reconciliation and filings too?",
     answer: ` Yes, our specialized GST team acts as the "operator for your GST machine." We handle meticulous data reconciliation, return filing, and audit defense, ensuring you maximize your Input Tax Credit and are protected from penalties and audits.`,
+  },
+  {
+    question:
+      "What licenses are mandatory to open a restaurant or café in India?",
+    answer: ` You’ll need: Shops & Establishment License, FSSAI License, Trade License, Fire NOC, Pollution
+NOC, and a Health/Sanitation Certificate.
+Bars and hotels additionally require Excise and Tourism Department registration.`,
+  },
+  {
+    question: "Are GST and tax filings handled by Workforce?",
+    answer: `No — Workforce focuses on regulatory and operational compliance. All taxation, accounting, and audit-related filings (like GST returns or Income Tax) should be
+handled by your Chartered Accountant.`,
+  },
+  {
+    question: "How does Workforce help with ongoing compliance?",
+    answer: `Our execution system tracks renewal timelines, prepares documents, coordinates inspections,
+and handles filings with departments — ensuring no penalty or suspension due to missed
+deadlines.`,
+  },
+  {
+    question: "Is Fire NOC and Pollution NOC mandatory for all restaurants?",
+    answer: `Yes. Even small cafés and cloud kitchens require fire safety certification and basic pollution/
+waste disposal approvals from local authorities.`,
+  },
+  {
+    question: "What employee-related compliances apply in hospitality?",
+    answer: `Once you cross 10 employees — ESIC and POSH Act apply.
+At 20 employees — EPF becomes mandatory. Workforce registers and manages both.`,
+  },
+  {
+    question: "How long does it take to get all approvals?",
+    answer: `Typically 20–45 working days, depending on state and municipality.
+Workforce’s process sequencing helps parallelize departments, reducing total turnaround time.`,
+  },
+  {
+    question: "What happens during closure or transfer of a restaurant?",
+    answer: `All active licenses must be surrendered or transferred — Fire, FSSAI, Trade, Pollution, etc.
+Workforce ensures this is done in proper legal order, so no future liability remains.`,
+  },
+  {
+    question: "Can Workforce handle multiple outlets or franchises?",
+    answer: `Yes. Workforce manages location-specific compliance profiles, so each outlet’s licenses and
+renewals are tracked separately but managed centrally.`,
+  },
+  {
+    question: "Does Workforce provide legal representation or advisory?",
+    answer: `We execute filings, renewals, and NOCs, and coordinate with authorities.
+For legal disputes or litigation, we can connect you to verified legal partners — but Workforce’s
+core is execution, not representation.`,
+  },
+  {
+    question: "Can I download a compliance checklist before signing up?",
+    answer: `Yes — download our free Hospitality Promoter Compliance Checklist (2025) for a complete
+state-wise view of every registration, renewal, and NOC required.`,
   },
 ];
 
@@ -5895,5 +6032,669 @@ export const faqsTransport = [
       "Do you assist with both the Principal Employer's CLRA registration and the contractor's license?",
     answer:
       "Yes. We handle the mandatory registration for you as the principal employer and manage the verification, monitoring, and compliance for all your contractors' labor licenses.",
+  },
+];
+
+export const cityData = {
+  bangalore: {
+    pf: {
+      title: "EPF Compliance. Simplified. Secured. Sustained.",
+      description:
+        "Leading PF consultants in Bangalore for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
+      contact: "bangalore@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants in Bangalore",
+      description:
+        "Trusted ESIC consultants in Bangalore offering complete ESIC registration and compliance services.",
+      contact: "bangalore@esicconsultants.in",
+    },
+  },
+  hyderabad: {
+    pf: {
+      title: "PF Consultants in Hyderabad",
+      description:
+        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
+      contact: "hyderabad@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants in Hyderabad",
+      description:
+        "Reliable ESIC registration and compliance support in Hyderabad.",
+      contact: "hyderabad@esicconsultants.in",
+    },
+  },
+  goa: {
+    pf: {
+      title: "PF Consultants in Hyderabad",
+      description:
+        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
+      contact: "hyderabad@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants in Hyderabad",
+      description:
+        "Reliable ESIC registration and compliance support in Hyderabad.",
+      contact: "hyderabad@esicconsultants.in",
+    },
+  },
+  mumbai: {
+    pf: {
+      title: "PF Consultants in Hyderabad",
+      description:
+        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
+      contact: "hyderabad@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants in Hyderabad",
+      description:
+        "Reliable ESIC registration and compliance support in Hyderabad.",
+      contact: "hyderabad@esicconsultants.in",
+    },
+  },
+  chennai: {
+    pf: {
+      title: "PF Consultants in Hyderabad",
+      description:
+        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
+      contact: "hyderabad@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants in Hyderabad",
+      description:
+        "Reliable ESIC registration and compliance support in Hyderabad.",
+      contact: "hyderabad@esicconsultants.in",
+    },
+  },
+  vizag: {
+    pf: {
+      title: "PF Consultants in Hyderabad",
+      description:
+        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
+      contact: "hyderabad@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants in Hyderabad",
+      description:
+        "Reliable ESIC registration and compliance support in Hyderabad.",
+      contact: "hyderabad@esicconsultants.in",
+    },
+  },
+  naviMumbai: {
+    pf: {
+      title: "PF Consultants in Hyderabad",
+      description:
+        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
+      contact: "hyderabad@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants in Hyderabad",
+      description:
+        "Reliable ESIC registration and compliance support in Hyderabad.",
+      contact: "hyderabad@esicconsultants.in",
+    },
+  },
+  delhi: {
+    pf: {
+      title: "PF Consultants in Hyderabad",
+      description:
+        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
+      contact: "hyderabad@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants in Hyderabad",
+      description:
+        "Reliable ESIC registration and compliance support in Hyderabad.",
+      contact: "hyderabad@esicconsultants.in",
+    },
+  },
+  gurugram: {
+    pf: {
+      title: "PF Consultants in Hyderabad",
+      description:
+        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
+      contact: "hyderabad@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants in Hyderabad",
+      description:
+        "Reliable ESIC registration and compliance support in Hyderabad.",
+      contact: "hyderabad@esicconsultants.in",
+    },
+  },
+  india: {
+    pf: {
+      title: "PF Consultants in Hyderabad",
+      description:
+        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
+      contact: "hyderabad@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants in Hyderabad",
+      description:
+        "Reliable ESIC registration and compliance support in Hyderabad.",
+      contact: "hyderabad@esicconsultants.in",
+    },
+  },
+  jaipur: {
+    pf: {
+      title: "PF Consultants in Hyderabad",
+      description:
+        "Professional PF consultants in Hyderabad specializing in payroll compliance and PF management.",
+      contact: "hyderabad@pfconsultants.in",
+    },
+    esic: {
+      title: "ESIC Consultants in Hyderabad",
+      description:
+        "Reliable ESIC registration and compliance support in Hyderabad.",
+      contact: "hyderabad@esicconsultants.in",
+    },
+  },
+};
+
+// data.js
+export const gstData = [
+  {
+    slug: "gst-expert-consultants-in-bangalore",
+    title: "GST Expert Consultants in Bangaloregst",
+    description: "Trusted GST filing and advisory services in Bangalore.",
+  },
+  {
+    slug: "gst-consultants-in-bangalore",
+    title: "GST Registration in Hyderabad",
+    description: "Hassle-free GST registration and compliance.",
+  },
+  {
+    slug: "gstr-2",
+    title: "GST Registration in Hyderabad",
+    description: "Hassle-free GST registration and compliance.",
+  },
+  {
+    slug: "gstr-3b",
+    title: "GST Registration in Hyderabad",
+    description: "Hassle-free GST registration and compliance.",
+  },
+  {
+    slug: "gst-monthly-returns-filings-in-bangalore",
+    title: "GST Registration in Hyderabad",
+    description: "Hassle-free GST registration and compliance.",
+  },
+  {
+    slug: "gst-registration-in-bangalore",
+    title: "GST Registration in Hyderabad",
+    description: "Hassle-free GST registration and compliance.",
+  },
+];
+
+export const standalonePages = {
+  "umang-app": {
+    title: "UMANG App – Unified Mobile App for New Governance",
+    description:
+      "Access EPF, ESIC, and other government services using the UMANG App. Learn how to use it for EPF services.",
+  },
+  "UAN-linking": {
+    title: "EPFO Login Guide for Members",
+    description:
+      "Step-by-step instructions for EPFO member login, UAN activation, and password reset.",
+  },
+  "pf-consultants-for-it": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "pf-consultants-for-factories": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "pf-consultants-for-manufacturing": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "pf-monthly-returns": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "UAN-creation": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "PF-monthly-challans": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "PF-registration-in-bangalore": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "IC-registration-in-bangalore": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "ECR-monthly-generation": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "epf-notice-reply": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "pension-withdrawl": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "pf-death-claim-procedure": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "pf-employee-grievience-handling": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "how-to-generate-UAN-number": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "pf-for-schools": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "pf-for-colleges": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "pf-for-hospitals": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "pf-for-hotels": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "ecr-issues": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "how-to-close-epf-registration": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "how-to-change-address-in-epf": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "how-to-link-dsc-in-epf": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "how-to-approve-claims-in-epf": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "how-to-approve-form-13": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "how-to-approve-employee-name-change-in-epf": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "how-to-file-joint-declaration-in-epf": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "epf-form-5": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "epf-updates": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "epf-policy-changes": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+  "epf-code-closure": {
+    title: "EPF Withdrawal Process Explained",
+    description:
+      "Understand eligibility, documents, and step-by-step procedure for PF withdrawal using the EPFO portal.",
+  },
+};
+
+export const standalonePagesEsic = {
+  "esic-challan-generation": {
+    title: "UMANG App – Unified Mobile App for New Governance",
+    description:
+      "Access EPF, ESIC, and other government services using the UMANG App. Learn how to use it for EPF services.",
+  },
+  "esic-consultants-for-it": {
+    title: "UMANG App – Unified Mobile App for New Governance",
+    description:
+      "Access EPF, ESIC, and other government services using the UMANG App. Learn how to use it for EPF services.",
+  },
+  "esic-consultants-for-factories": {
+    title: "UMANG App – Unified Mobile App for New Governance",
+    description:
+      "Access EPF, ESIC, and other government services using the UMANG App. Learn how to use it for EPF services.",
+  },
+  "esic-consultants-for-manufacturing": {
+    title: "UMANG App – Unified Mobile App for New Governance",
+    description:
+      "Access EPF, ESIC, and other government services using the UMANG App. Learn how to use it for EPF services.",
+  },
+  "esic-monthly-returns": {
+    title: "UMANG App – Unified Mobile App for New Governance",
+    description:
+      "Access EPF, ESIC, and other government services using the UMANG App. Learn how to use it for EPF services.",
+  },
+};
+
+export const epfManagementBangalore = {
+  mainTitle: "Comprehensive Employer EPF Compliance Services",
+  cards: [
+    //     {
+    //       title: "What Businesses in Bangalore Are Facing?",
+    //       features: [
+    //         `Every month, hundreds of Bengaluru establishments lose time and money over EPF defaults
+    // they never saw coming.`,
+    //         `Missed challans, wrong UAN mapping, delayed inspection replies — small mistakes that cost
+    // lakhs.`,
+    //         `The law doesn’t forgive ignorance.`,
+    //         `If you’re an employer, you’re responsible — even when your contractor isn’t.`,
+    //       ],
+    //     },
+    //     {
+    //       title: "What Workforce Does?",
+
+    //       features: [
+    //         `Workforce builds the compliance infrastructure that Indian enterprises run on.`,
+    //         `From Peenya’s factories to Koramangala’s startups, we handle end-to-end EPF obligations
+    // — so your team never has to.`,
+    //       ],
+    //     },
+    {
+      title: "Our Services",
+
+      features: [
+        `EPF Registration & Code Activation — handled in 48 hours.`,
+        `Monthly Return Filing (ECR & Challan) — automated + verified.`,
+        `EPFO Inspection & Notice Response — legal drafting, officer representation.`,
+        `Employee UAN & KYC Management — streamlined onboarding & exits.`,
+        `Establishment Closure or Transfer — complete documentation & surrender.`,
+        `PF Health Report — Know your compliance score before your next
+inspection.`,
+      ],
+    },
+    {
+      title: "Built for India’s Employers",
+
+      features: [
+        `Workforce serves over 100 enterprises across Karnataka — from industrial clusters to IT
+parks — ensuring continuous compliance and peace of mind.`,
+        `Case Example:A Bengaluru logistics firm faced ₹8.7 lakh penalty after PF short remittance across 47
+employees. Workforce intervened, reconciled challans, and cleared inspection in 14 days — zero further
+liability.`,
+      ],
+    },
+    {
+      title: "Get Your Free PF Health Audit",
+
+      features: [
+        `Before the next inspection letter arrives, know where you stand.`,
+        `Upload your last PF challan or ECR file.`,
+        `We’ll review and send a detailed risk report:
+  * Missing employee codes
+  * Interest liabilities
+  * Delayed payment flags
+  * Future inspection triggers`,
+      ],
+    },
+    {
+      title: "Why Choose Workforce?",
+
+      features: [
+        `Response Time:Live compliance experts available same day.`,
+        `Data Security:End-to-end encrypted filing environment.`,
+        `Local Network:Deep liaison with Karnataka PF offices.`,
+        `Accuracy:Auto-check of ECR mismatch before submission.`,
+        `Accountability:You deal with licensed consultants, not brokers.`,
+        `We don’t file forms. We build trust between the law and those who follow it.`,
+      ],
+    },
+  ],
+};
+
+export const epfManagementFaqBangalore = [
+  {
+    question: "How do I register for EPF in Bangalore?",
+    answer: `To register for EPF in Bangalore, visit the EPFO Unified Portal, submit Form 5A
+along with incorporation documents, bank proof, and identity verification. Workforce
+completes this process in 48 hours with full DSC setup and code activation support.`,
+  },
+  {
+    question: "What are the penalties for PF non-compliance in Bangalore?",
+    answer: `Under Section 14B of the EPF Act, penalties range from 5% to 25% of the arrear
+amount, plus 12% annual interest. In severe cases under Section 7A, penalties can reach
+₹5 lakh, with potential criminal prosecution for willful defaults exceeding ₹1 lakh.`,
+  },
+  {
+    question: "Which EPFO office handles Bangalore?",
+    answer: `Bangalore has multiple EPFO offices: Regional Office at Indiranagar, and subregional
+offices at Jayanagar, Rajajinagar, Koramangala, and Whitefield. Workforce
+maintains direct liaison with all Bangalore EPFO offices for seamless compliance.`,
+  },
+  {
+    question: "How long does EPF registration take in Bangalore?",
+    answer: `EPF registration typically takes 7-10 working days if filed correctly. Workforce
+accelerates this to 48 hours through pre-verified documentation and direct EPFO liaison.`,
+  },
+  {
+    question: "Can Workforce handle EPFO inspections?",
+    answer: `Yes. Workforce specializes in Section 7A inspection handling, including showcause
+notice replies, officer representation, challan reconciliation, and penalty
+negotiation. We've successfully closed 50+ inspections in Bangalore with minimal
+penalties.`,
+  },
+  {
+    question: "What is the cost of hiring a PF consultant in Bangalore?",
+    answer: `PF consultant fees in Bangalore vary based on employee strength and complexity.
+Workforce offers transparent pricing starting at ₹3,000/month for up to 50 employees,
+with customized packages for larger establishments.`,
+  },
+];
+
+export const largeCardsEpfoBangalore = {
+  subTitle: "What Businesses in Bangalore Are Facing?",
+  // subText:
+  //   "Your assigned client manager ensures seamless ongoing operations and proactive problem-solving.",
+
+  cards: [
+    {
+      title: "The Cost of Missed Compliance",
+      subtitle: `Every month, hundreds of Bengaluru establishments lose time and money over EPF defaults
+they never saw coming.`,
+      icon: "🛡️",
+      bubble: "Protect!",
+      bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
+    },
+    {
+      title: "The Real Cost of PF Filing Errors",
+      subtitle: `Missed challans, wrong UAN mapping, delayed inspection replies — small mistakes that cost
+lakhs.`,
+      icon: "🔗",
+      bubble: "Integrate!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Compliance Isn’t Optional — It’s the Law",
+      subtitle: `The law doesn’t forgive ignorance.`,
+      icon: "💼",
+      bubble: "Consult!",
+      bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
+    },
+    {
+      title: "Responsibility Can’t Be Outsourced",
+      subtitle: `If you’re an employer, you’re responsible — even when your contractor isn’t.`,
+      icon: "🤖",
+      bubble: "Automate!",
+      bg: "bg-gradient-to-br from-[#43e97b] to-[#38f9d7]",
+    },
+  ],
+};
+
+export const pastelCardsEpfoBangalore = {
+  subTitle: "What Workforce Does?",
+  // subText:
+  //   "Our experts handle complete setup while you focus on your business.",
+  cards: [
+    {
+      title: "Building India’s Compliance Infrastructure",
+      subtitle: `Workforce builds the compliance infrastructure that Indian enterprises run on.`,
+      icon: "🎨",
+      bubble: "Create!",
+      bg: "from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "Powering India’s Businesses Through Compliance Infrastructure",
+      subtitle: `From Peenya’s factories to Koramangala’s startups, we handle end-to-end EPF obligations
+— so your team never has to.`,
+      icon: "🌱",
+      bubble: "Grow!",
+      bg: "from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "EPF Registration & Code Activation",
+      subtitle: `We handle complete EPFO registration for new establishments in Karnataka — from digital signature setup to code allotment — ensuring your organization is compliant and operational within 48 working hours.`,
+      icon: "🤝",
+      bubble: "Connect!",
+      bg: "from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Employee UAN & KYC Management",
+      subtitle: `
+End-to-end management of employee UAN activation, KYC verification, and transfer claims — ensuring seamless onboarding, exits, and compliance across your workforce.`,
+      icon: "✨",
+      bubble: "Dream!",
+      bg: "from-[#d299c2] to-[#fef9d7]",
+    },
+  ],
+};
+
+export const videoHighlightDataEpfBangalore = {
+  heading:
+    "PF Consultants in Bangalore — End-to-End EPF Compliance by Workforce",
+  description:
+    "Workforce is Bangalore’s trusted PF compliance partner — managing EPF registration, filings, inspections, and closure for India’s top employers.",
+  coverImage: "https://nodcoding.com/wp-content/uploads/2024/09/Nod-Intro.jpg",
+  alt: "construction",
+};
+
+export const uspDataEpfBangalore = {
+  mainTitle: "What Businesses in Bangalore Are Facing?",
+  cards: [
+    {
+      title: "The Cost of Missed Compliance",
+      description:
+        "Every month, hundreds of Bengaluru establishments lose time and money over EPF defaults they never saw coming.",
+    },
+    {
+      title: "The Real Cost of PF Filing Errors",
+      description:
+        "Missed challans, wrong UAN mapping, delayed inspection replies — small mistakes that cost lakhs.",
+    },
+    {
+      title: "Compliance Isn’t Optional — It’s the Law",
+      description: "The law doesn’t forgive ignorance.",
+    },
+    {
+      title: "Responsibility Can’t Be Outsourced",
+      description:
+        "If you’re an employer, you’re responsible — even when your contractor isn’t.",
+    },
+  ],
+};
+
+export const slidesEpfBangalore = [
+  {
+    title: "Building India’s Compliance Infrastructure",
+    text: "Workforce builds the compliance infrastructure that Indian enterprises run on.",
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-experience-1920x2075.jpg",
+  },
+  {
+    title: "Powering India’s Businesses Through Compliance Infrastructure",
+    text: `
+From Peenya’s factories to Koramangala’s startups, we handle end-to-end EPF obligations — so your team never has to.`,
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
+  },
+
+  {
+    title: "EPF Registration & Code Activation",
+    text: "We handle complete EPFO registration for new establishments in Karnataka — from digital signature setup to code allotment — ensuring your organization is compliant and operational within 48 working hours.",
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-experience-1920x2075.jpg",
+  },
+  {
+    title: "Employee UAN & KYC Management",
+    text: `
+End-to-end management of employee UAN activation, KYC verification, and transfer claims — ensuring seamless onboarding, exits, and compliance across your workforce.`,
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
+  },
+  {
+    title: "Our Services",
+    text: `
+EPF Registration & Code Activation — handled in 48 hours. Monthly Return Filing (ECR & Challan) — automated + verified. EPFO Inspection & Notice Response — legal drafting, officer representation. Employee UAN & KYC Management — streamlined onboarding & exits.`,
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
+  },
+   {
+    title: "Built for India’s Employers",
+    text: `
+Workforce serves over 100 enterprises across Karnataka — from industrial clusters to IT parks — ensuring continuous compliance and peace of mind.`,
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
+  },
+    {
+    title: "Get Your Free PF Health Audit",
+    text: "Before the next inspection letter arrives, know where you stand. Upload your last PF challan or ECR file. We’ll review and send a detailed risk report",
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-experience-1920x2075.jpg",
+  },
+   {
+    title: "Why Choose Workforce?",
+    text: `
+Live compliance experts available same day. End-to-end encrypted filing environment. Deep liaison with Karnataka PF offices. Auto-check of ECR mismatch before submission. You deal with licensed consultants, not brokers.`,
+    image:
+      "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
   },
 ];

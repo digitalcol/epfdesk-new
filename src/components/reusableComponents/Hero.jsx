@@ -27,7 +27,7 @@ const Bootcamps = ({ title, description }) => {
             </h2>
 
             <p
-              className={`text-sm sm:text-lg font-semibold z-10 md:z-0`}
+              className={`text-sm sm:text-lg font-semibold z-10`}
             >
               {description}
             </p>
