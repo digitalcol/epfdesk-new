@@ -4,46 +4,8 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
-const testimonials = [
-  {
-    id: 1,
-    name: "Guy Novik",
-    text: `I underestimated just how valuable our investment in Lattice would prove to be…as a small business we’ve set a gold standard for what individual and collective people success looks like.`,
-    bg: "bg-[#ffeaea]",
-  },
-  {
-    id: 2,
-    name: "Alan Cairns",
-    text: `Lattice is better than its competitors. It feels like it was made for us. Everything is rooted in building a high-performance culture and raising the bar year-on-year.`,
-    bg: "bg-[#f3ffe7]",
-  },
-  {
-    id: 3,
-    name: "Weave Team",
-    text: `Lattice is better than its competitors. It feels like it was made for us. Everything is rooted in building a high-performance culture and raising the bar year-on-year.`,
-    bg: "bg-[#eaeaff]",
-  },
-  {
-    id: 4,
-    name: "Guy Novik",
-    text: `I underestimated just how valuable our investment in Lattice would prove to be…as a small business we’ve set a gold standard for what individual and collective people success looks like.`,
-    bg: "bg-[#ffeaea]",
-  },
-  {
-    id: 5,
-    name: "Alan Cairns",
-    text: `Lattice is better than its competitors. It feels like it was made for us. Everything is rooted in building a high-performance culture and raising the bar year-on-year.`,
-    bg: "bg-[#f3ffe7]",
-  },
-  {
-    id: 6,
-    name: "Weave Team",
-    text: `Lattice is better than its competitors. It feels like it was made for us. Everything is rooted in building a high-performance culture and raising the bar year-on-year.`,
-    bg: "bg-[#eaeaff]",
-  },
-];
 
-export default function Testimonials() {
+export default function Testimonials({data}) {
   const [current, setCurrent] = useState(0);
   const scrollRef = useRef(null);
   const isProgrammatic = useRef(false);
@@ -188,23 +150,24 @@ export default function Testimonials() {
     // </section>
     <div className="w-full rounded-[3.2rem] mt-36 md:max-w-7xl lg:max-w-[100rem] xl:max-w-[150rem] mx-auto border border-[color-mix(in_srgb,_#001f1f_8%,_transparent)] bg-white py-12">
       <h1 className="text-center text-[2.6rem] font-semibold tracking-[-.024em] text-[#001f1f]">
-        Trusted by top performers
+     {data?.title}
       </h1>
+      <p className="text-center mt-2.5 text-[17px]">{data?.subTitle}</p>
       {/* Parent with white background */}
       <section className="flex flex-col items-center w-full py-10">
         <div
           ref={scrollRef}
-          className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide w-full px-4 md:px-12 scroll-smooth"
+          className="flex gap-6 overflow-x-auto overflow-y-hidden snap-x snap-mandatory scrollbar-hide w-full px-4 md:px-12 scroll-smooth"
           style={{ scrollBehavior: "smooth" }}
         >
-          {testimonials.map((t) => (
+          {data?.cards?.map((t) => (
             <div
               key={t.id}
               className={`${t.bg} snap-center flex-shrink-0 w-[90%] md:w-[420px] h-[350px] rounded-3xl p-8 flex flex-col justify-between transition-transform duration-300`}
             >
               <div className="flex items-center gap-4 mb-4">
                 <div>
-                  <h3 className="text-[2rem] font-semibold">{t.name}</h3>
+                  <h3 className="text-[1.8rem] font-semibold">{t.name}</h3>
                 </div>
               </div>
 
@@ -216,7 +179,7 @@ export default function Testimonials() {
         </div>
 
         <div className="flex gap-2 mt-6">
-          {testimonials.map((_, index) => (
+          {data?.cards?.map((_, index) => (
             <button
               key={index}
               aria-label={`Go to slide ${index + 1}`}

@@ -185,6 +185,12 @@ export default function Navbar() {
     pathname.startsWith("/esicCompliance/") && pathname.split("/").length > 2;
   const isDynamicUnigst =
     pathname.startsWith("/unigst/") && pathname.split("/").length > 2;
+  const isDynamicPFEsic =
+    pathname === "/pf-esic-consultant-bangalore" ||
+    pathname.startsWith("/pf-esic-consultant-bangalore/");
+      const isDynamicPFEsicReg =
+    pathname === "/pf-esic-registration-bangalore" ||
+    pathname.startsWith("/pf-esic-registration-bangalore/");
 
   // conditional links for desktop
   let desktopLinks;
@@ -198,12 +204,24 @@ export default function Navbar() {
       { href: "/epfManagement", label: "EPFO" },
       { href: "/esic", label: "ESIC" },
     ];
-  } else {
+  } else if (isDynamicPFEsic) {
+    desktopLinks = [
+      { href: "/epfManagement", label: "EPFO" },
+      { href: "/esic", label: "ESIC" },
+    ];
+  }else if (isDynamicPFEsicReg) {
+    desktopLinks = [
+      { href: "/epfManagement", label: "EPFO" },
+      { href: "/esic", label: "ESIC" },
+    ];
+  }
+   else {
     desktopLinks = links;
   }
 
   // show CTAs only on dynamic routes
-  const showCTAs = isDynamicEPF || isDynamicESIC || isDynamicUnigst;
+  const showCTAs =
+    isDynamicEPF || isDynamicESIC || isDynamicUnigst || isDynamicPFEsic || isDynamicPFEsicReg;
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50">

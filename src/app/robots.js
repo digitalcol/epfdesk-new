@@ -1,7 +1,6 @@
-
 export default function robots() {
- return {
- rules: [{ userAgent: '*', allow: '/' }],
- sitemap: 'https://epfdesk.com/sitemap.xml',
- }
+  return {
+    rules: [{ userAgent: "*", allow: "/" }],
+    sitemap: "https://epfdesk.com/sitemap.xml",
+  };
 }
