@@ -91,5 +91,35 @@ export default function sitemap() {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+     {
+      url: `${base}/epf/bangalore/epf-registration-bangalore`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+     {
+      url: `${base}/esicCompliance/bangalore/esic-consultants-bangalore`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+     {
+      url: `${base}/esicCompliance/bangalore/esic-registration-bangalore`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/pf-esic-registration-bangalore`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+     {
+      url: `${base}/pf-esic-consultant-bangalore`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
   ];
 }

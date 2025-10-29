@@ -6038,16 +6038,28 @@ export const faqsTransport = [
 export const cityData = {
   bangalore: {
     pf: {
-      title: "EPF Compliance. Simplified. Secured. Sustained.",
+      title:
+        "EPF Consultants Bangalore: We Log Into Your Portal and Do It For You",
+      description: "Zero Penalties. Zero Stress. Zero Defaults Since 2023.",
+      contact: "bangalore@pfconsultants.in",
+    },
+      pfRegistration: {
+      title: "EPF Registration Bangalore: We Get You Registered in 7 Days",
       description:
-        "Leading PF consultants in Bangalore for EPF registration, monthly compliance, inspection handling & closure. Trusted by 100+ employers. Get a free PF audit.",
+        "100% Approval Rate. Zero Rejections. Start Hiring Immediately.",
       contact: "bangalore@pfconsultants.in",
     },
     esic: {
-      title: "ESIC Consultants in Bangalore",
+      title: "ESIC Consultants Bangalore: We Handle Everything, You Handle Nothing",
       description:
-        "Trusted ESIC consultants in Bangalore offering complete ESIC registration and compliance services.",
+        "100% On-Time Filing. Zero Penalties. Zero Stress Since 2023.",
       contact: "bangalore@esicconsultants.in",
+    },
+      esicRegistration: {
+      title: "ESIC Registration Bangalore: We Get You Registered in 5 Days",
+      description:
+        "100% Approval Rate. Zero Rejections. Start Covering Employees Immediately.",
+      contact: "bangalore@pfconsultants.in",
     },
   },
   hyderabad: {
@@ -6494,117 +6506,111 @@ liability.`,
 
 export const epfManagementFaqBangalore = [
   {
-    question: "How do I register for EPF in Bangalore?",
-    answer: `To register for EPF in Bangalore, visit the EPFO Unified Portal, submit Form 5A
-along with incorporation documents, bank proof, and identity verification. Workforce
-completes this process in 48 hours with full DSC setup and code activation support.`,
+    question: "Do you actually log into our EPFO portal, or just guide us?",
+    answer: `We actually log in (with read/write permissions you grant via the EPFO Trusted User system) and do the filing. You don’t touch the portal unless you want to. You get a dashboard to view status anytime.`,
   },
   {
-    question: "What are the penalties for PF non-compliance in Bangalore?",
-    answer: `Under Section 14B of the EPF Act, penalties range from 5% to 25% of the arrear
-amount, plus 12% annual interest. In severe cases under Section 7A, penalties can reach
-₹5 lakh, with potential criminal prosecution for willful defaults exceeding ₹1 lakh.`,
+    question: "What if you miss a deadline and we get penalized?",
+    answer: `In 24 months and 50+ clients, this has never happened. But if it does, we pay the penalty—that’s in our service agreement. Your risk is zero.`,
   },
   {
-    question: "Which EPFO office handles Bangalore?",
-    answer: `Bangalore has multiple EPFO offices: Regional Office at Indiranagar, and subregional
-offices at Jayanagar, Rajajinagar, Koramangala, and Whitefield. Workforce
-maintains direct liaison with all Bangalore EPFO offices for seamless compliance.`,
+    question: "How quickly can you start?",
+    answer: `48 hours from agreement signing. We’ve onboarded clients in as little as 24 hours for urgent cases (like when filing deadline is approaching).`,
   },
   {
-    question: "How long does EPF registration take in Bangalore?",
-    answer: `EPF registration typically takes 7-10 working days if filed correctly. Workforce
-accelerates this to 48 hours through pre-verified documentation and direct EPFO liaison.`,
+    question: "Do you handle contractor PF obligations?",
+    answer: `Yes. This is one of our specialties, especially for Peenya and Electronic City manufacturers who use contract labor. We track contractor compliance and ensure your establishment isn’t held liable for contractor defaults.`,
   },
   {
-    question: "Can Workforce handle EPFO inspections?",
-    answer: `Yes. Workforce specializes in Section 7A inspection handling, including showcause
-notice replies, officer representation, challan reconciliation, and penalty
-negotiation. We've successfully closed 50+ inspections in Bangalore with minimal
-penalties.`,
+    question: "What about employee questions? Do we still have to answer them?",
+    answer: `No. Give employees our dedicated WhatsApp number (+91-XXXXXXXXX). We answer all PF queries directly—UAN issues, balance queries, withdrawal status, transfer problems. Your HR team never sees them.`,
   },
   {
-    question: "What is the cost of hiring a PF consultant in Bangalore?",
-    answer: `PF consultant fees in Bangalore vary based on employee strength and complexity.
-Workforce offers transparent pricing starting at ₹3,000/month for up to 50 employees,
-with customized packages for larger establishments.`,
+    question: "Can you handle EPF for our remote/WFH employees?",
+    answer: `Absolutely. We manage EPF compliance for Bangalore-based employees working remotely and for employees in other states (when your Bangalore establishment is the registered entity).`,
+  },
+  {
+    question: "Do you provide MIS reports for management?",
+    answer: `Yes. Monthly reports showing: contributions paid, employee count, new joiners, exits, pending items, inspection status. Plus real-time dashboard access 24/7.`,
+  },
+  {
+    question: "What if we’re already behind on filings?",
+    answer: `We specialize in cleanup. We’ll assess arrears, file all pending returns, negotiate penalty waivers where possible, and bring you current within 30 days. Then we keep you compliant forever.`,
   },
 ];
 
+
 export const largeCardsEpfoBangalore = {
-  subTitle: "What Businesses in Bangalore Are Facing?",
+  subTitle: "What Our Bangalore Clients Say",
   // subText:
   //   "Your assigned client manager ensures seamless ongoing operations and proactive problem-solving.",
 
   cards: [
     {
-      title: "The Cost of Missed Compliance",
-      subtitle: `Every month, hundreds of Bengaluru establishments lose time and money over EPF defaults
-they never saw coming.`,
+      title: "Priya M., HR Director",
+      subtitle: `Before EPFdesk, our HR spent 2 days every month on PF filing. Now? They don’t even think about it. In 18 months, we haven’t had a single late filing or penalty.`,
       icon: "🛡️",
       bubble: "Protect!",
       bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
     },
     {
-      title: "The Real Cost of PF Filing Errors",
-      subtitle: `Missed challans, wrong UAN mapping, delayed inspection replies — small mistakes that cost
-lakhs.`,
+      title: "Rajesh K., Finance Head",
+      subtitle: `When we got an EPFO inspection notice, we panicked. EPFdesk responded in 4 hours, handled everything, and we closed the inspection with zero penalties. Worth every rupee`,
       icon: "🔗",
       bubble: "Integrate!",
       bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
     },
     {
-      title: "Compliance Isn’t Optional — It’s the Law",
-      subtitle: `The law doesn’t forgive ignorance.`,
+      title: "Anita S., Operations Manager",
+      subtitle: `Our employees used to bombard HR with PF questions. Now they just WhatsApp EPFdesk directly. That alone has saved us 10 hours a week.” `,
       icon: "💼",
       bubble: "Consult!",
       bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
     },
-    {
-      title: "Responsibility Can’t Be Outsourced",
-      subtitle: `If you’re an employer, you’re responsible — even when your contractor isn’t.`,
-      icon: "🤖",
-      bubble: "Automate!",
-      bg: "bg-gradient-to-br from-[#43e97b] to-[#38f9d7]",
-    },
+    // {
+    //   title: "Responsibility Can’t Be Outsourced",
+    //   subtitle: `If you’re an employer, you’re responsible — even when your contractor isn’t.`,
+    //   icon: "🤖",
+    //   bubble: "Automate!",
+    //   bg: "bg-gradient-to-br from-[#43e97b] to-[#38f9d7]",
+    // },
   ],
 };
 
 export const pastelCardsEpfoBangalore = {
-  subTitle: "What Workforce Does?",
+  subTitle: "Get Started in 3 Steps",
   // subText:
   //   "Our experts handle complete setup while you focus on your business.",
   cards: [
     {
-      title: "Building India’s Compliance Infrastructure",
-      subtitle: `Workforce builds the compliance infrastructure that Indian enterprises run on.`,
+      title: "Step 1",
+      subtitle: `Talk to us for 10 minutes — we’ll audit your current setup`,
       icon: "🎨",
       bubble: "Create!",
       bg: "from-[#a8e6cf] to-[#dcedc1]",
     },
     {
-      title: "Powering India’s Businesses Through Compliance Infrastructure",
-      subtitle: `From Peenya’s factories to Koramangala’s startups, we handle end-to-end EPF obligations
-— so your team never has to.`,
+      title: "Step 2",
+      subtitle: `We onboard in 48 hours — portal access, documentation, process setup`,
       icon: "🌱",
       bubble: "Grow!",
       bg: "from-[#ffd3a5] to-[#fd9853]",
     },
     {
-      title: "EPF Registration & Code Activation",
-      subtitle: `We handle complete EPFO registration for new establishments in Karnataka — from digital signature setup to code allotment — ensuring your organization is compliant and operational within 48 working hours.`,
+      title: "Step 3",
+      subtitle: `Relax — we handle everything from Day 1`,
       icon: "🤝",
       bubble: "Connect!",
       bg: "from-[#a8edea] to-[#fed6e3]",
     },
-    {
-      title: "Employee UAN & KYC Management",
-      subtitle: `
-End-to-end management of employee UAN activation, KYC verification, and transfer claims — ensuring seamless onboarding, exits, and compliance across your workforce.`,
-      icon: "✨",
-      bubble: "Dream!",
-      bg: "from-[#d299c2] to-[#fef9d7]",
-    },
+//     {
+//       title: "Employee UAN & KYC Management",
+//       subtitle: `
+// End-to-end management of employee UAN activation, KYC verification, and transfer claims — ensuring seamless onboarding, exits, and compliance across your workforce.`,
+//       icon: "✨",
+//       bubble: "Dream!",
+//       bg: "from-[#d299c2] to-[#fef9d7]",
+//     },
   ],
 };
 
@@ -6677,24 +6683,872 @@ EPF Registration & Code Activation — handled in 48 hours. Monthly Return Filin
     image:
       "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
   },
-   {
+  {
     title: "Built for India’s Employers",
     text: `
 Workforce serves over 100 enterprises across Karnataka — from industrial clusters to IT parks — ensuring continuous compliance and peace of mind.`,
     image:
       "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
   },
-    {
+  {
     title: "Get Your Free PF Health Audit",
     text: "Before the next inspection letter arrives, know where you stand. Upload your last PF challan or ECR file. We’ll review and send a detailed risk report",
     image:
       "https://nodcoding.com/wp-content/uploads/2024/07/home-experience-1920x2075.jpg",
   },
-   {
+  {
     title: "Why Choose Workforce?",
     text: `
 Live compliance experts available same day. End-to-end encrypted filing environment. Deep liaison with Karnataka PF offices. Auto-check of ECR mismatch before submission. You deal with licensed consultants, not brokers.`,
     image:
       "https://nodcoding.com/wp-content/uploads/2024/07/home-accommodation-1920x2075.jpg",
+  },
+];
+
+export const epfBangaloreCardData = {
+  title: "EPF Management",
+  subTitle: "End to End EPF compliance Management in Bangalore",
+  description:
+    "Your EPF compliance worries end here. EPFdesk has protected 50+ Bangalore enterprises from EPF penalties with zero defaults — and we’re ready to do the same for you. From Peenya’s factories to Whitefield’s tech corridors, Electronic City, Koramangala, and the CBD, businesses trust us to handle what keeps HR teams awake: employee UAN linking that never lags, exit marking that meets every deadline, monthly ECRs filed flawlessly, inspection notices resolved without penalties, and contractor PF obligations that don’t become your nightmare. Our difference? We don’t just tell you what to do — we log into your portal and do it for you. Whether you’re a startup activating EPFO for the first time, a manufacturer drowning in contractor documentation, or an IT company fielding employee PF questions, our Bangalore team transforms EPF from your constant worry into your competitive advantage. Sleep better tonight. Your EPF compliance is now our responsibility.",
+};
+
+export const testimonialsEpfBangalore = {
+title:"What We Actually Do (Not Just Consult)",
+subTitle:"We don’t give you a checklist. We log into your EPFO portal and do everything",
+  cards:[
+  {
+    id: 1,
+    name: "Onboarding (Day 1)",
+    text: `Day-1 EPF onboarding made effortless — we generate and link UANs, complete all KYC and bank verifications via the UMANG app, and ensure every new employee is EPF-compliant within 24 hours of joining.`,
+    bg: "bg-[#ffeaea]",
+  },
+  {
+    id: 2,
+    name: "Monthly Filing (Before 15th Every Month)",
+    text: `Timely and accurate monthly EPF filing — we generate precise ECRs, verify challans, and complete submissions before the 15th each month, ensuring zero penalties and full compliance with instant filing confirmations.`,
+    bg: "bg-[#f3ffe7]",
+  },
+  {
+    id: 3,
+    name: "Exit Management (Within 48 Hours)",
+    text: `Swift and compliant exit management — we mark exits within 48 hours, handle PF transfers and withdrawals, and ensure smooth final settlements for a hassle-free employee offboarding experience.`,
+    bg: "bg-[#eaeaff]",
+  },
+  {
+    id: 4,
+    name: "Crisis Response (EPFO Inspections)",
+    text: `Expert EPFO crisis management — we respond to inspection notices within 24 hours, prepare complete audit documentation, represent you in hearings, and secure favorable resolutions with zero penalties.`,
+    bg: "bg-[#ffeaea]",
+  },
+  {
+    id: 5,
+    name: "Employee Support (Grievance Shield)",
+    text: `End-to-end employee PF support — we manage all grievances through the EPFiGMS portal, resolve account issues and delays, and provide direct employee assistance so your HR team stays complaint-free.`,
+    bg: "bg-[#f3ffe7]",
+  },
+  {
+    id: 6,
+    name: "What This Actually Saves You",
+    text: `What This Actually Saves You — eliminate 40+ HR hours a month, avoid ₹50,000+ in annual penalties, and remove every PF-related headache. With EPFdesk, you gain guaranteed compliance, zero employee complaints, and complete peace of mind — all at a fraction of your current cost.`,
+    bg: "bg-[#eaeaff]",
+  },
+]
+}
+
+export const epfBangaloreRegistrationCardData = {
+  title: "EPF Registration",
+  subTitle: "End to End EPF Registration in Bangalore",
+  description:
+    "Starting a business in Bangalore? The moment you cross 20 employees, EPF registration isn’t optional—it’s mandatory. But here’s what most businesses don’t know: getting EPF registration wrong costs you weeks of delays, rejected applications, and penalties that start from Day 1. EPFdesk has registered 50+ Bangalore establishments with a 100% approval rate—no rejections, no re-submissions, no delays. We handle everything: DSC procurement, Form 5A preparation, establishment code generation, LIN activation, and UMANG app setup. While other consultants take 30-45 days, we get you registered in 7 days. Whether you’re a Whitefield startup hiring your first 20 employees, a Peenya manufacturer expanding operations, or an Electronic City tech company setting up a new entity, we ensure you’re EPF-compliant from Day 1. Don’t let registration delays stop you from hiring. Let us handle the paperwork while you build your team.",
+};
+
+export const testimonialsEpfBangaloreRegistration = {
+title:"Our 7-Day EPF Registration Process",
+// subTitle:"We don’t give you a checklist. We log into your EPFO portal and do everything",
+  cards:[
+  {
+    id: 1,
+    name: "Day 1-2: Documentation & DSC",
+    text: `We kick off by collecting and verifying all essential establishment details and documents. Our team secures your Digital Signature Certificate (DSC) and prepares the EPF registration form with complete accuracy — ensuring a smooth start to your registration process`,
+    bg: "bg-[#ffeaea]",
+  },
+  {
+    id: 2,
+    name: "Day 3-4: EPFO Submission",
+    text: `We create your establishment profile on the EPFO portal, upload verified documents, and file Form 5A. Our team tracks the application in real time to ensure smooth submission and zero delays.`,
+    bg: "bg-[#f3ffe7]",
+  },
+  {
+    id: 3,
+    name: "Day 5-6: EPFO Processing",
+    text: `We closely monitor your EPFO application, respond to any department queries, and coordinate with officials. If an inspection is required, we handle the entire process on your behalf for seamless approval.`,
+    bg: "bg-[#eaeaff]",
+  },
+  {
+    id: 4,
+    name: "Day 7: Approval & Setup",
+    text: `Your establishment gets approved, LIN is activated, and your EPFO access is set up on UMANG. We provide full login credentials, a quick team briefing, and ensure you're ready to file your first ECR — all within 7 days.`,
+    bg: "bg-[#ffeaea]",
+  },
+  // {
+  //   id: 5,
+  //   name: "Employee Support (Grievance Shield)",
+  //   text: `End-to-end employee PF support — we manage all grievances through the EPFiGMS portal, resolve account issues and delays, and provide direct employee assistance so your HR team stays complaint-free.`,
+  //   bg: "bg-[#f3ffe7]",
+  // },
+  // {
+  //   id: 6,
+  //   name: "What This Actually Saves You",
+  //   text: `What This Actually Saves You — eliminate 40+ HR hours a month, avoid ₹50,000+ in annual penalties, and remove every PF-related headache. With EPFdesk, you gain guaranteed compliance, zero employee complaints, and complete peace of mind — all at a fraction of your current cost.`,
+  //   bg: "bg-[#eaeaff]",
+  // },
+]
+}
+
+export const largeCardsEpfoBangaloreRegistration = {
+  subTitle: "What Bangalore Businesses Say",
+  // subText:
+  //   "Your assigned client manager ensures seamless ongoing operations and proactive problem-solving.",
+
+  cards: [
+    {
+      title: "Karthik R., Founder",
+      subtitle: `We crossed 20 employees in August. EPFdesk registered us by mid-September—in just 8 days. Our previous consultant took 6 weeks and the application was rejected twice. These guys know exactly what EPFO wants.`,
+      icon: "🛡️",
+      bubble: "Protect!",
+      bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
+    },
+    {
+      title: "Meera P., HR Head",
+      subtitle: `We were hiring fast and couldn’t generate UANs without EPF code. EPFdesk got us registered in 7 days—exactly when they promised. Zero hassle, zero follow-ups needed from our side.`,
+      icon: "🔗",
+      bubble: "Integrate!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Arun K., Operations Manager",
+      subtitle: `The DSC alone took us 3 weeks with another consultant. EPFdesk procured it in 2 days and had us registered within a week. Incredible efficiency. `,
+      icon: "💼",
+      bubble: "Consult!",
+      bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
+    },
+    // {
+    //   title: "Responsibility Can’t Be Outsourced",
+    //   subtitle: `If you’re an employer, you’re responsible — even when your contractor isn’t.`,
+    //   icon: "🤖",
+    //   bubble: "Automate!",
+    //   bg: "bg-gradient-to-br from-[#43e97b] to-[#38f9d7]",
+    // },
+  ],
+};
+
+export const pastelCardsEpfoBangaloreRegistration = {
+  subTitle: "Why Choose EPFdesk (vs DIY or Other Consultants)",
+  // subText:
+  //   "Our experts handle complete setup while you focus on your business.",
+  cards: [
+    {
+      title: "DIY Registration",
+      subtitle: `Doing EPF registration yourself often leads to delays, rejections, and wasted effort — with a 30–45 day timeline, high rejection risk, no expert guidance, and significant time spent chasing approvals.`,
+      icon: "🎨",
+      bubble: "Create!",
+      bg: "from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "Other Consultants",
+      subtitle: `Typical consultants take 20–30 days, offer minimal guidance, provide no penalty protection, and treat registration as a one-time task without ongoing support.`,
+      icon: "🌱",
+      bubble: "Grow!",
+      bg: "from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "EPFdesk",
+      subtitle: `EPFdesk delivers guaranteed registration in 7 days with a 100% approval rate, full documentation support, proactive follow-ups, penalty protection, and ongoing post-registration compliance support.`,
+      icon: "🤝",
+      bubble: "Connect!",
+      bg: "from-[#a8edea] to-[#fed6e3]",
+    },
+//     {
+//       title: "Employee UAN & KYC Management",
+//       subtitle: `
+// End-to-end management of employee UAN activation, KYC verification, and transfer claims — ensuring seamless onboarding, exits, and compliance across your workforce.`,
+//       icon: "✨",
+//       bubble: "Dream!",
+//       bg: "from-[#d299c2] to-[#fef9d7]",
+//     },
+  ],
+};
+
+export const epfManagementFaqBangaloreRegistration = [
+  {
+    question: "When exactly do I need EPF registration?",
+    answer: `The moment you have 20 or more employees (including contract employees counted under your establishment), you must register within one month. Delay leads to penalties starting from ₹5,000/month.`,
+  },
+  {
+    question: "What if I have 19 employees now but will cross 20 soon?",
+    answer: `Start the registration process now. It takes 7-10 days, so you’ll be ready when you hit 20. Better to be early than late.`,
+  },
+  {
+    question: "Can I register myself or do I need a consultant?",
+    answer: `You can do it yourself, but 50%+ of first-time applications get rejected due to documentation errors. With EPFdesk, you get 100% approval rate and save 30+ hours of your time. Your choice depends on how much your time is worth.`,
+  },
+  {
+    question: "What happens if registration is delayed?",
+    answer: `EPFO can impose penalties of ₹5,000/month for delayed registration. Plus, you can’t generate UANs for new employees, which creates HR nightmares.`,
+  },
+  {
+    question: "Do you handle ESIC registration too?",
+    answer: `Yes! We can register you for both EPF and ESIC together. Saves time and ensures both are compliant from Day 1. [Link to ESIC Registration page]`,
+  },
+  {
+    question: "What if EPFO asks for an inspection?",
+    answer: `We prepare all inspection-ready documentation from Day 1. If EPFO schedules an inspection, we coordinate the entire process and represent you. You don’t need to interact with officials.`,
+  },
+  {
+    question: "What about ongoing EPF compliance after registration?",
+    answer: `Registration is just the start. Monthly ECR filing, employee onboarding, exits, and inspections are ongoing. We offer complete EPF management services if you want us to handle everything. [Link to EPF Consultants page]`,
+  },
+  {
+    question: "How soon can you start?",
+    answer: `Within 24 hours of receiving your documents. We start DSC procurement immediately and work in parallel on documentation.`,
+  },
+];
+
+
+export const esicBangaloreCardData = {
+  title: "ESIC Consultants",
+  subTitle: "End to End ESIC compliance Management in Bangalore",
+  description:
+    "ESIC compliance is messy—employee IPs that take days to generate, monthly challans that miss deadlines, claims that employees chase YOU for, and inspection notices that cause panic. EPFdesk has protected 50+ Bangalore establishments from ESIC penalties with 100% on-time filing—no delays, no defaults, no drama. From Peenya’s factories to Electronic City’s warehouses, Whitefield’s offices, and Koramangala’s service centers, businesses trust us to handle what overwhelms HR teams: IP number generation the day employees join, monthly return filing before the 15th, claim processing that employees never complain about, and inspection responses that close with zero penalties. Our difference? We don’t just advise—we log into your ESIC portal and do it for you. Whether you’re a manufacturer with 100+ workers, a startup hitting 10 employees, or a logistics company drowning in employee claims, our Bangalore team transforms ESIC from your constant headache into invisible compliance. Stop managing ESIC. Let us do it.",
+};
+
+export const testimonialsEsicBangalore = {
+title:"What We Actually Do (Not Just Consult)",
+// subTitle:"We don’t give you a checklist. We log into your EPFO portal and do everything",
+  cards:[
+  {
+    id: 1,
+    name: "Employee Registration (Day 1)",
+    text: `We generate ESIC IP numbers within 24 hours, complete employee KYC and linking, ensuring every new hire is covered from Day 1—no delays, no compliance gaps.`,
+    bg: "bg-[#ffeaea]",
+  },
+  {
+    id: 2,
+    name: "Monthly Filing (Before 15th Every Month)",
+    text: `We handle complete ESIC monthly filing before the 15th—accurate calculations, challan generation, payment, and confirmation—ensuring zero delays or penalties.`,
+    bg: "bg-[#f3ffe7]",
+  },
+  {
+    id: 3,
+    name: "Claims Management (We Handle, Not You)",
+    text: `We manage the entire ESIC claims process—from document verification to reimbursement—so your HR never deals with employee claims or ESIC follow-ups.`,
+    bg: "bg-[#eaeaff]",
+  },
+  {
+    id: 4,
+    name: "Inspection Response (24-Hour Turnaround)",
+    text: `We handle ESIC inspections end-to-end—responding within 24 hours, preparing documents, representing you, and closing cases with zero penalties.`,
+    bg: "bg-[#ffeaea]",
+  },
+  {
+    id: 5,
+    name: "Exit Management",
+    text: `We manage employee exits instantly—updating ESIC records, verifying final contributions, and ensuring every exit is fully compliant and penalty-free.`,
+    bg: "bg-[#f3ffe7]",
+  },
+  {
+    id: 6,
+    name: "What This Actually Saves You",
+    text: `By switching to EPFdesk, you eliminate penalties, delays, and HR effort—saving Lakhs annually while your HR team stays completely free from ESIC hassles.`,
+    bg: "bg-[#eaeaff]",
+  },
+]
+}
+
+export const largeCardsEsicBangalore = {
+  subTitle: "What Our Bangalore Clients Say",
+  // subText:
+  //   "Your assigned client manager ensures seamless ongoing operations and proactive problem-solving.",
+
+  cards: [
+    {
+      title: "Ramesh S., Plant Manager",
+      subtitle: `“Before EPFdesk, our workers would complain about ESIC claims for weeks. Now they get help directly from EPFdesk’s team. Our HR doesn’t even know which claims are being processed. Perfect.`,
+      icon: "🛡️",
+      bubble: "Protect!",
+      bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
+    },
+    {
+      title: "Divya K., Operations Head",
+      subtitle: `We got an ESIC inspection notice and panicked—we had no idea what documents they wanted. EPFdesk responded in 3 hours, handled everything, and closed it with zero penalties. Worth every single rupee.`,
+      icon: "🔗",
+      bubble: "Integrate!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Sanjay M., HR Manager",
+      subtitle: `“New employee IP numbers used to take us 5-7 days. With EPFdesk, they’re generated within 24 hours. Our onboarding is now seamless. `,
+      icon: "💼",
+      bubble: "Consult!",
+      bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
+    },
+    // {
+    //   title: "Responsibility Can’t Be Outsourced",
+    //   subtitle: `If you’re an employer, you’re responsible — even when your contractor isn’t.`,
+    //   icon: "🤖",
+    //   bubble: "Automate!",
+    //   bg: "bg-gradient-to-br from-[#43e97b] to-[#38f9d7]",
+    // },
+  ],
+};
+
+export const pastelCardsEsicBangalore = {
+  subTitle: "Get Started in 3 Steps",
+  // subText:
+  //   "Our experts handle complete setup while you focus on your business.",
+  cards: [
+    {
+      title: "Step 1",
+      subtitle: `Talk to us for 10 minutes — we’ll audit your current setup`,
+      icon: "🎨",
+      bubble: "Create!",
+      bg: "from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "Step 2",
+      subtitle: `We onboard in 48 hours — portal access, documentation, process setup`,
+      icon: "🌱",
+      bubble: "Grow!",
+      bg: "from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "Step 3",
+      subtitle: `Relax — we handle everything from Day 1`,
+      icon: "🤝",
+      bubble: "Connect!",
+      bg: "from-[#a8edea] to-[#fed6e3]",
+    },
+//     {
+//       title: "Employee UAN & KYC Management",
+//       subtitle: `
+// End-to-end management of employee UAN activation, KYC verification, and transfer claims — ensuring seamless onboarding, exits, and compliance across your workforce.`,
+//       icon: "✨",
+//       bubble: "Dream!",
+//       bg: "from-[#d299c2] to-[#fef9d7]",
+//     },
+  ],
+};
+
+export const esicManagementFaqBangalore = [
+  {
+    question: "Do you actually log into our ESIC portal, or just guide us?",
+    answer: `We actually log in (with access you grant us) and handle everything—IP generation, monthly filing, claim tracking. You get a dashboard to monitor status anytime, but you never need to touch the ESIC portal.`,
+  },
+  {
+    question: "What if you miss a deadline and we get penalized?",
+    answer: `In 24 months and 50+ clients, we’ve never missed a deadline. But if it happens, we pay the penalty—that’s in our service agreement. Your risk is zero.`,
+  },
+  {
+    question: "How quickly can you start?",
+    answer: `48 hours. We’ve onboarded emergency clients in 24 hours when filing deadlines were close.`,
+  },
+  {
+    question: "Do you handle employee ESIC claims?",
+    answer: `Yes. This is one of our key services. Employees contact us directly (we give them a dedicated WhatsApp number), and we guide them through the entire claim process. Your HR team never hears from them.`,
+  },
+  {
+    question: "What about ESIC inspections?",
+    answer: `We respond within 24 hours, prepare all documentation, and represent you. Our 100% resolution rate means zero penalties. You don’t even need to meet the inspector if you don’t want to.`,
+  },
+  {
+    question: "Can you handle both EPF and ESIC?",
+    answer: `Absolutely. Most of our clients use us for both. It’s more efficient and ensures both compliances are handled by one team. [Link to PF ESIC Consultant page]`,
+  },
+  {
+    question: "What if we’re already behind on filings?",
+    answer: `We specialize in cleanup. We’ll assess arrears, file all pending returns, negotiate penalty waivers where possible, and bring you current within 30 days.`,
+  },
+  {
+    question: "Do you provide reports for management?",
+    answer: `Yes. Monthly reports showing: contributions paid, employee count, new IPs generated, exits, pending claims, inspection status. Plus real-time dashboard.`,
+  },
+];
+
+export const esicBangaloreRegistrationCardData = {
+  title: "ESIC Registration",
+  subTitle: "End to End ESIC Registration in Bangalore",
+  description:
+    "ESIC registration in Bangalore is simpler than EPF—but only if you know exactly what ESIC wants. Most businesses make three costly mistakes: wrong branch selection, incorrect wage declaration, and incomplete factory inspection documentation. EPFdesk has registered 50+ Bangalore establishments with 100% approval rate—no rejections, no delays, no re-submissions. We handle everything: employer registration (Code 17), factory/office inspection coordination, employee IP generation, portal setup, and first monthly return. While DIY attempts take 15-20 days (and often fail), we get you registered in 5 days. Whether you’re a Peenya manufacturer just crossing 10 employees, a Whitefield startup hiring your first batch, or an Electronic City logistics company expanding operations, we ensure ESIC coverage from Day 1. Don’t let registration delays leave your employees uncovered. We handle the paperwork in 5 days flat.",
+};
+
+
+export const testimonialsEsicRegistrationBangalore = {
+title:"Our 5-Day ESIC Registration Process",
+// subTitle:"We don’t give you a checklist. We log into your EPFO portal and do everything",
+  cards:[
+  {
+    id: 1,
+    name: "Day 1: Documentation Collection",
+    text: `We collect all necessary documents, verify every detail for accuracy, and determine your correct ESIC branch or sub-regional office. We also prepare and validate the employer registration form (Code 17) to ensure a smooth registration process.`,
+    bg: "bg-[#ffeaea]",
+  },
+  {
+    id: 2,
+    name: "Day 2: ESIC Submission",
+    text: `We submit the completed Code 17 form to the designated ESIC branch, begin tracking the application status in real time, and proactively prepare for any inspection or additional documentation requests from ESIC authorities.`,
+    bg: "bg-[#f3ffe7]",
+  },
+  {
+    id: 3,
+    name: "Day 3: Inspection (if required)",
+    text: `We coordinate and manage the ESIC inspection process—arranging the visit, presenting all required documentation, addressing officer queries on the spot, and ensuring your establishment receives prompt inspection clearance.`,
+    bg: "bg-[#eaeaff]",
+  },
+  {
+    id: 4,
+    name: "Day 4: Registration Approval",
+    text: `We secure your 17-digit ESIC establishment code, set up your online employer portal access, and prepare the complete employee registration list—ensuring your organization is ready to onboard employees under ESIC immediately.`,
+    bg: "bg-[#ffeaea]",
+  },
+  {
+    id: 5,
+    name: "Employee Registration & Setup",
+    text: `We complete full employee registration by generating IP numbers, filing the first monthly return (if applicable), and setting up online challan payments. You receive full portal access and a team briefing—making your establishment fully ESIC-compliant within just 5 days.`,
+    bg: "bg-[#f3ffe7]",
+  },
+  // {
+  //   id: 6,
+  //   name: "What This Actually Saves You",
+  //   text: `By switching to EPFdesk, you eliminate penalties, delays, and HR effort—saving Lakhs annually while your HR team stays completely free from ESIC hassles.`,
+  //   bg: "bg-[#eaeaff]",
+  // },
+]
+}
+
+export const largeCardsEsicRegistrationBangalore = {
+  subTitle: "What Bangalore Businesses Say",
+  // subText:
+  //   "Your assigned client manager ensures seamless ongoing operations and proactive problem-solving.",
+
+  cards: [
+    {
+      title: "Suresh P., Operations Manager",
+      subtitle: `We tried DIY ESIC registration and got rejected twice. EPFdesk did it in 5 days flat. They knew exactly what the ESIC inspector would ask for. Seamless process.`,
+      icon: "🛡️",
+      bubble: "Protect!",
+      bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
+    },
+    {
+      title: "Priya R., Founder",
+      subtitle: `Our employee count crossed 10 on a Friday. By the next Friday, EPFdesk had us registered with all employee IPs generated. Insanely fast.`,
+      icon: "🔗",
+      bubble: "Integrate!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Kiran M., HR Head",
+      subtitle: `The ESIC inspection was scheduled on Day 3. EPFdesk had everything ready—the inspector was in and out in 30 minutes. Registration approved same day.`,
+      icon: "💼",
+      bubble: "Consult!",
+      bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
+    },
+    // {
+    //   title: "Responsibility Can’t Be Outsourced",
+    //   subtitle: `If you’re an employer, you’re responsible — even when your contractor isn’t.`,
+    //   icon: "🤖",
+    //   bubble: "Automate!",
+    //   bg: "bg-gradient-to-br from-[#43e97b] to-[#38f9d7]",
+    // },
+  ],
+};
+
+export const pastelCardsEsicRegistrationBangalore = {
+  subTitle: "Get Started in 3 Steps",
+  // subText:
+  //   "Our experts handle complete setup while you focus on your business.",
+  cards: [
+    {
+      title: "Step 1",
+      subtitle: `Share basic details (10-minute call)`,
+      icon: "🎨",
+      bubble: "Create!",
+      bg: "from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "Step 2",
+      subtitle: `We handle everything (5 days)`,
+      icon: "🌱",
+      bubble: "Grow!",
+      bg: "from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "Step 3",
+      subtitle: `You’re registered, employees covered`,
+      icon: "🤝",
+      bubble: "Connect!",
+      bg: "from-[#a8edea] to-[#fed6e3]",
+    },
+//     {
+//       title: "Employee UAN & KYC Management",
+//       subtitle: `
+// End-to-end management of employee UAN activation, KYC verification, and transfer claims — ensuring seamless onboarding, exits, and compliance across your workforce.`,
+//       icon: "✨",
+//       bubble: "Dream!",
+//       bg: "from-[#d299c2] to-[#fef9d7]",
+//     },
+  ],
+};
+
+export const esicRegistrationFaqBangalore = [
+  {
+    question: "When do I need ESIC registration?",
+    answer: `When you have 10 or more employees earning up to ₹21,000/month. Registration must be done within 15 days of crossing this threshold. Delay = penalties.`,
+  },
+  {
+    question: "What if I have contractors? Do they count?",
+    answer: `Yes, if contract employees work at your premises and you exercise control over them. We help you determine if contractor employees need to be covered under your ESIC.`,
+  },
+  {
+    question: "What’s the inspection for?",
+    answer: `ESIC sometimes inspects establishments to verify address, employee details, and working conditions. We prepare all documentation so inspection goes smoothly. With us, inspections close the same day.`,
+  },
+  {
+    question: "Can I register without hiring employees yet?",
+    answer: `Yes. If you’re about to hire, register first so new employees are covered from Day 1. Better to be early than late.`,
+  },
+  {
+    question: "Do you handle both EPF and ESIC registration?",
+    answer: `Yes! Most businesses need both. We can register you for EPF and ESIC together, saving time and ensuring both compliances start together. [Link to PF ESIC Registration page]`,
+  },
+  {
+    question: "What about ongoing ESIC compliance after registration?",
+    answer: `Registration is just the start. Monthly contributions, IP generation for new employees, claims, and inspections are ongoing. We offer complete ESIC management if you want us to handle everything. [Link to ESIC Consultants page]`,
+  },
+  {
+    question: "How soon can you start?",
+    answer: `Within 24 hours of receiving your documents. We start documentation immediately.`,
+  },
+  {
+    question: "What if ESIC rejects the registration?",
+    answer: `With us, rejection doesn’t happen (100% approval rate). But if by some rare chance it does, we fix issues and resubmit at no extra cost.`,
+  },
+];
+
+
+export const PFEsicBangaloreCardData = {
+  title: "PF & ESIC Consultants",
+  subTitle: "End to End PF & ESIC compliance Management in Bangalore",
+  description:
+    "Managing EPF and ESIC separately is exhausting—two consultants, two deadlines, two inspection responses, two sets of employee complaints. EPFdesk handles both EPF and ESIC as one integrated service, saving you time, reducing errors, and ensuring nothing falls through the cracks. We protect 50+ Bangalore businesses with complete PF+ESIC compliance: UANs and IPs generated together on Day 1, both monthly returns filed before the 15th, employee queries answered by one team, inspections coordinated without duplication, and contractors managed under both compliances. When EPF and ESIC are managed by one team, compliance becomes seamless. Whether you’re a Peenya manufacturer with 200+ workers, a Whitefield tech company scaling fast, or a Koramangala services business tired of juggling two consultants, our Bangalore team handles both compliances so well, you’ll forget they exist. One team. Both compliances. Zero stress. That’s the EPFdesk difference.",
+};
+
+export const testimonialsPFEsicBangalore = {
+title:"What We Do (Everything, Together)",
+// subTitle:"We don’t give you a checklist. We log into your EPFO portal and do everything",
+  cards:[
+  {
+    id: 1,
+    name: "Onboarding (EPF + ESIC Together)",
+    text: `We register new employees under both EPF and ESIC on the same day—UAN creation, IP generation, and portal linking—all completed seamlessly. Your workforce becomes 100% compliant from Day 1 with a unified, hassle-free onboarding process.`,
+    bg: "bg-[#ffeaea]",
+  },
+  {
+    id: 2,
+    name: "Monthly Filing (Both Before 15th)",
+    text: `We file both EPF and ESIC returns before the 15th each month—accurate ECRs, challans, and payments done together. You receive one consolidated confirmation, ensuring zero penalties and perfect synchronization across both compliances.`,
+    bg: "bg-[#f3ffe7]",
+  },
+  {
+    id: 3,
+    name: "Exit Management (Coordinated)",
+    text: `We coordinate EPF and ESIC exits simultaneously—marking employees in both portals, settling final contributions, and guiding on PF transfers or withdrawals. Result: clean exits with no compliance gaps or pending obligations.`,
+    bg: "bg-[#eaeaff]",
+  },
+  {
+    id: 4,
+    name: "Employee Support (One Team, All Queries)",
+    text: `We provide a single support line for all employee PF and ESIC issues—UAN, IP, claims, transfers, or balances—so your HR team never deals with compliance complaints again`,
+    bg: "bg-[#ffeaea]",
+  },
+  {
+    id: 5,
+    name: "Inspection Response (Coordinated Defense)",
+    text: `We handle both EPF and ESIC inspections together—responding within 24 hours, coordinating documentation, and ensuring consistent, penalty-free closure.`,
+    bg: "bg-[#f3ffe7]",
+  },
+  {
+    id: 6,
+    name: "What Integrated PF+ESIC Management Saves You",
+    text: `With EPFdesk’s integrated PF + ESIC management, you eliminate duplicate work, delays, and penalties — saving 50+ HR hours a month, ₹80,000+ in fines, and endless coordination headaches. One dashboard, zero stress.`,
+    bg: "bg-[#eaeaff]",
+  },
+]
+}
+
+export const largeCardsPFEsicBangalore = {
+  subTitle: "What Bangalore Businesses Say",
+  // subText:
+  //   "Your assigned client manager ensures seamless ongoing operations and proactive problem-solving.",
+
+  cards: [
+    {
+      title: "Rajesh V., CFO",
+      subtitle: `We were using two different consultants—one for PF, one for ESIC. The coordination was killing us. EPFdesk handles both seamlessly. One team, one dashboard, zero stress. Should have done this years ago.`,
+      icon: "🛡️",
+      bubble: "Protect!",
+      bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
+    },
+    {
+      title: "Meera S., HR Director",
+      subtitle: `During an EPFO inspection, they also checked ESIC compliance. Thank God EPFdesk handles both—our responses were perfectly aligned. No contradictions, no panic. Inspection closed in one day.`,
+      icon: "🔗",
+      bubble: "Integrate!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Anil K., Operations Head",
+      subtitle: `Our employees used to call us for PF questions and a different consultant for ESIC claims. Now they just WhatsApp EPFdesk for everything. That alone is worth the fee.`,
+      icon: "💼",
+      bubble: "Consult!",
+      bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
+    },
+    // {
+    //   title: "Responsibility Can’t Be Outsourced",
+    //   subtitle: `If you’re an employer, you’re responsible — even when your contractor isn’t.`,
+    //   icon: "🤖",
+    //   bubble: "Automate!",
+    //   bg: "bg-gradient-to-br from-[#43e97b] to-[#38f9d7]",
+    // },
+  ],
+};
+
+export const pastelCardsPFEsicBangalore = {
+  subTitle: "Get Started in 3 Steps",
+  // subText:
+  //   "Our experts handle complete setup while you focus on your business.",
+  cards: [
+    {
+      title: "Step 1",
+      subtitle: `10-minute call — we audit both your EPF and ESIC compliance`,
+      icon: "🎨",
+      bubble: "Create!",
+      bg: "from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "Step 2",
+      subtitle: `48-hour onboarding — we take over both portals`,
+      icon: "🌱",
+      bubble: "Grow!",
+      bg: "from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "Step 3",
+      subtitle: `Relax — we handle both, you handle neither`,
+      icon: "🤝",
+      bubble: "Connect!",
+      bg: "from-[#a8edea] to-[#fed6e3]",
+    },
+//     {
+//       title: "Employee UAN & KYC Management",
+//       subtitle: `
+// End-to-end management of employee UAN activation, KYC verification, and transfer claims — ensuring seamless onboarding, exits, and compliance across your workforce.`,
+//       icon: "✨",
+//       bubble: "Dream!",
+//       bg: "from-[#d299c2] to-[#fef9d7]",
+//     },
+  ],
+};
+
+export const pfEsicManagementFaqBangalore = [
+  {
+    question: "Do you actually handle both EPF and ESIC, or just coordinate?",
+    answer: `We actually handle both—we log into both portals (with your permissions) and do all the work. You get one unified dashboard showing status of both compliances.`,
+  },
+  {
+    question: "Is integrated service more expensive than hiring two consultants?",
+    answer: `No! It’s usually cheaper because we eliminate duplicate work. Plus, you save massive amounts of coordination time. Ask for a quote—you’ll be surprised.`,
+  },
+  {
+    question: "What if I only need EPF or only ESIC?",
+    answer: `We offer standalone services too. But if you need both, integrated service makes way more sense. [Links to EPF-only and ESIC-only pages]`,
+  },
+  {
+    question: "Can you take over if I’m currently using two different consultants?",
+    answer: `Absolutely. We specialize in consolidation. We’ll transition both smoothly without any compliance gaps. Usually done within one month.`,
+  },
+  {
+    question: "What about contractor PF and ESIC?",
+    answer: `We handle contractor compliance under both EPF and ESIC. Critical for manufacturers and logistics companies. We ensure you’re not held liable for contractor defaults in either.`,
+  },
+  {
+    question: "How do employee queries work?",
+    answer: `Give employees one WhatsApp number (ours). They contact us for PF balance, ESIC claims, UAN issues, IP problems—everything. Your HR team never hears from them.`,
+  },
+  {
+    question: "Do you handle registration too?",
+    answer: `Yes! If you need to register for EPF and/or ESIC, we do that first, then take over ongoing management. [Link to PF ESIC Registration page]`,
+  },
+  {
+    question: "What if we miss a deadline under your management?",
+    answer: `Hasn’t happened in 24 months across 50+ clients. But if it does, we pay the penalty for both EPF and ESIC. It’s in our service agreement.`,
+  },
+];
+
+export const PFEsicRegBangaloreCardData = {
+  title: "PF & ESIC Registration",
+  subTitle: "End to End PF & ESIC registration in Bangalore",
+  description:
+    "Need both EPF and ESIC registration? Doing them separately is inefficient—you duplicate documentation, deal with two different agencies, coordinate two inspections, and waste 3-4 weeks. EPFdesk registers both EPF and ESIC together in 7 days flat—one documentation set, coordinated submissions, unified inspection response, and complete setup of both systems. We’ve registered 50+ Bangalore establishments for both compliances with 100% approval rate. While separate registrations take 6-8 weeks total, we complete both in 7 days. Whether you’re a new Peenya manufacturer setting up operations, a Whitefield startup hitting registration thresholds, or an Electronic City logistics company expanding, we ensure you’re compliant under both EPF and ESIC from Day 1. Don’t do registration twice. Let us register you for both, once, in one week.",
+};
+
+export const testimonialsPFEsicRegBangalore = {
+title:"Our 7-Day Integrated Registration Process",
+// subTitle:"We don’t give you a checklist. We log into your EPFO portal and do everything",
+  cards:[
+  {
+    id: 1,
+    name: "Documentation & Preparation",
+    text: `Streamlined document collection for both EPF and ESIC—handled together in a single session. We prepare all required forms, verify details, and ensure accuracy before submission.`,
+    bg: "bg-[#ffeaea]",
+  },
+  {
+    id: 2,
+    name: "Parallel Submissions",
+    text: `EPF and ESIC registrations are submitted simultaneously—no waiting between the two. We create your EPF establishment, file required forms, and submit ESIC Code 17 the same day, ensuring both processes move forward in parallel for faster approval.`,
+    bg: "bg-[#f3ffe7]",
+  },
+  {
+    id: 3,
+    name: "Inspection & Processing",
+    text: `If an inspection is required, we coordinate a single, unified inspection for both EPF and ESIC. Our team presents all documentation together, addresses officer queries on the spot, and monitors both applications closely to ensure quick, hassle-free approvals`,
+    bg: "bg-[#eaeaff]",
+  },
+  {
+    id: 4,
+    name: "Approval & Complete Setup",
+    text: `By Day 7, both EPF and ESIC setups are fully approved and active. You receive establishment and ESIC codes, LIN activation, and employee access through UMANG and ESIC portals. With both systems ready, you can instantly start filings, generate UANs and IPs, and onboard new hires seamlessly.`,
+    bg: "bg-[#ffeaea]",
+  },
+  
+]
+}
+
+export const largeCardsPFEsicRegBangalore = {
+  subTitle: "What Bangalore Businesses Say",
+  // subText:
+  //   "Your assigned client manager ensures seamless ongoing operations and proactive problem-solving.",
+
+  cards: [
+    {
+      title: "Vikram R., Founder, ",
+      subtitle: `We needed both EPF and ESIC. Other consultants said ‘EPF will take 3 weeks, then we’ll do ESIC which takes 2 weeks—total 5 weeks.’ EPFdesk did both in 7 days. We were hiring on Day 8. Unbelievable efficiency.`,
+      icon: "🛡️",
+      bubble: "Protect!",
+      bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
+    },
+    {
+      title: "Deepa M., HR Manager",
+      subtitle: `The inspector came for EPF verification and also checked ESIC documents at the same time. EPFdesk had coordinated this—one inspection, both clearances. Saved us at least 2 weeks.`,
+      icon: "🔗",
+      bubble: "Integrate!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Anand K., Operations Director",
+      subtitle: `We were ready to hire 30 employees but couldn’t until EPF and ESIC codes came through. EPFdesk got us both in 7 days. Those 30 people joined within 10 days of us starting the process. Perfect timing.`,
+      icon: "💼",
+      bubble: "Consult!",
+      bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
+    },
+    // {
+    //   title: "Responsibility Can’t Be Outsourced",
+    //   subtitle: `If you’re an employer, you’re responsible — even when your contractor isn’t.`,
+    //   icon: "🤖",
+    //   bubble: "Automate!",
+    //   bg: "bg-gradient-to-br from-[#43e97b] to-[#38f9d7]",
+    // },
+  ],
+};
+
+export const pastelCardsPFEsicRegBangalore = {
+  subTitle: "Why Choose EPFdesk for Both Registrations",
+  // subText:
+  //   "Our experts handle complete setup while you focus on your business.",
+  cards: [
+    {
+      title: "DIY Approach",
+      subtitle: `The DIY approach is slow and inefficient—taking 6–8 weeks with high rejection risk and separate inspections. You’ll spend over 60 hours coordinating tasks and managing two different portals, increasing the chance of delays and compliance errors`,
+      icon: "🎨",
+      bubble: "Create!",
+      bg: "from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "Two Separate Consultants",
+      subtitle: `Hiring two separate consultants still causes inefficiency—4–5 weeks of sequential work, duplicate documentation, and double coordination. You’ll manage two invoices and risk getting conflicting advice from different consultants.`,
+      icon: "🌱",
+      bubble: "Grow!",
+      bg: "from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "EPFdesk Integrated",
+      subtitle: `With EPFdesk’s integrated approach, both EPF and ESIC registrations are completed in just 7 days through parallel processing. You get 100% approval rates, zero coordination hassles, and spend only 10 minutes on the initial call—one team, one invoice, one seamless process.`,
+      icon: "🤝",
+      bubble: "Connect!",
+      bg: "from-[#a8edea] to-[#fed6e3]",
+    },
+//     {
+//       title: "Employee UAN & KYC Management",
+//       subtitle: `
+// End-to-end management of employee UAN activation, KYC verification, and transfer claims — ensuring seamless onboarding, exits, and compliance across your workforce.`,
+//       icon: "✨",
+//       bubble: "Dream!",
+//       bg: "from-[#d299c2] to-[#fef9d7]",
+//     },
+  ],
+};
+
+export const pfEsicRegFaqBangalore = [
+  {
+    question: "Do I need both EPF and ESIC registration?",
+    answer: `Depends on employee count: 
+- EPF: Mandatory when you have 20+ employees 
+- ESIC: Mandatory when you have 10+ employees earning up to ₹21,000/month  
+If you’re near or above both thresholds, register for both together. It’s more efficient.`,
+  },
+  {
+    question: "What if I only need one of them now?",
+    answer: `We offer standalone EPF or ESIC registration too. 
+But if you’ll need both eventually, register together now—it’s faster and cheaper than doing separately later.`,
+  },
+  {
+    question: "Can you really do both in 7 days?",
+    answer: `Yes. We process both in parallel (not sequentially like others do).  
+EPF takes 5-7 days, ESIC takes 4-5 days. When done together with coordinated submissions, it’s completed in 7 days total.`,
+  },
+  {
+    question: "What about inspections—do we need two separate ones?",
+    answer: `Usually not. We coordinate ONE inspection that covers both EPF and ESIC requirements.  
+This saves you time and ensures consistency.`,
+  },
+  {
+    question: "What if one gets approved but the other is delayed?",
+    answer: `Hasn’t happened with our clients (100% approval rate).  
+But if it does, we push for both to complete together. You don’t go live with half-registration.`,
+  },
+  {
+    question: "What about ongoing compliance after registration?",
+    answer: `Registration is just the beginning.  
+Monthly EPF and ESIC filings, employee onboarding, exits, claims, inspections are ongoing.  
+We offer integrated PF+ESIC management services if you want us to handle everything.`,
+  },
+  {
+    question: "How soon can you start?",
+    answer: `Within 24 hours of receiving your documents.  
+We immediately start DSC procurement and documentation preparation.`,
+  },
+  {
+    question: "What if I’m already registered for one but need the other?",
+    answer: `No problem. We can register the missing one.  
+But if you’re interested, we also offer integrated compliance management for both.`,
   },
 ];

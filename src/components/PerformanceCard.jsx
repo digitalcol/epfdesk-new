@@ -3,8 +3,17 @@
 import Image from "next/image";
 import React from "react";
 import SliderCards from "@/components/SliderCards";
+import {
+  testimonialsEpfBangalore,
+  testimonialsEpfBangaloreRegistration,
+  testimonialsEsicBangalore,
+  testimonialsEsicRegistrationBangalore,
+  testimonialsPFEsicBangalore,
+  testimonialsPFEsicRegBangalore,
+} from "@/utils/data";
 
-const PerformanceCard = () => {
+const PerformanceCard = ({ data, slug }) => {
+  console.log(slug);
   return (
     <div
       className="p-[70px] bg-transparent rounded-[3.2rem]"
@@ -46,22 +55,7 @@ const PerformanceCard = () => {
           /> */}
             <div className="bg-[#cdface] rounded-[20px] p-8">
               <p className="text-[1.2rem] text-[#001f1f] leading-[1.3]">
-                Your PF compliance worries end here. EPFdesk has protected 50+
-                Bangalore enterprises from EPF penalties and compliance chaos
-                with zero defaults — and we're ready to do the same for you.
-                From Peenya's factories to Whitefield's tech corridors,
-                Electronic City, Koramangala, and the CBD, businesses trust us
-                to handle what keeps HR teams awake: employee UAN linking that
-                never lags, exit marking that meets every deadline, monthly ECRs
-                filed flawlessly, inspection notices resolved without penalties,
-                and contractor PF obligations that don't become your nightmare.
-                Our difference? We don't just tell you what to do, we log into
-                your portal and do it for you. Whether you're a startup
-                activating EPFO for the first time, a manufacturer drowning in
-                contractor documentation, or an IT company fielding employee PF
-                questions, our Bangalore team transforms EPF from your constant
-                worry into your competitive advantage. Sleep better tonight.
-                Your EPF compliance is now our responsibility.
+                {data?.description}
               </p>
             </div>
           </div>
@@ -69,7 +63,7 @@ const PerformanceCard = () => {
           <div className="flex flex-row justify-between py-4 relative">
             <div>
               <h2 className="text-[1.6rem] font-bold text-[#001f1f] leading-[1.1]">
-                EPF Management
+                {data?.title}
               </h2>
             </div>
 
@@ -78,14 +72,31 @@ const PerformanceCard = () => {
 
               <div className="ml-6">
                 <p className="text-[#6a7878] text-[1rem] leading-[1.3]">
-                  End to End EPF compliance Management in Bangalore
+                  {data?.subTitle}
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <SliderCards />
+      {slug === "pf-consultants-in-bangalore" && (
+        <SliderCards data={testimonialsEpfBangalore} />
+      )}
+      {slug === "epf-registration-bangalore" && (
+        <SliderCards data={testimonialsEpfBangaloreRegistration} />
+      )}
+      {slug === "esic-consultants-bangalore" && (
+        <SliderCards data={testimonialsEsicBangalore} />
+      )}
+      {slug === "esic-registration-bangalore" && (
+        <SliderCards data={testimonialsEsicRegistrationBangalore} />
+      )}
+      {slug === "pf-esic-consultant-bangalore" && (
+        <SliderCards data={testimonialsPFEsicBangalore} />
+      )}
+      {slug === "pf-esic-registration-bangalore" && (
+        <SliderCards data={testimonialsPFEsicRegBangalore} />
+      )}
     </div>
   );
 };

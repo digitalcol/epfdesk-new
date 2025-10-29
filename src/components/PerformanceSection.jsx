@@ -1,6 +1,6 @@
 "use client"
 import { TiArrowRepeat } from "react-icons/ti";
-export const PerformanceSection = () => {
+export const PerformanceSection = ({data}) => {
   return (
     <>
     <section className="flex my-8 flex-col items-center justify-center px-6 pt-20 text-center">
@@ -16,14 +16,13 @@ export const PerformanceSection = () => {
       </div>
 
       {/* Heading */}
-      <h2 className="text-4xl md:text-[3.2rem] font-bold text-[#001f1f] max-w-2xl tracking-tight">
-        PF Consultants in Bangalore
+      <h2 className="text-4xl md:text-[3.2rem] font-bold text-[#001f1f] max-w-5xl tracking-tight">
+       {data?.title}
       </h2>
 
       {/* Subtitle */}
       <p className="text-[#001f1f] font-normal mt-4 mb-8 max-w-xl text-[1.2rem]">
-        EPFO, Registration, UAN Generation, Monthly Returns, Handling
-        Inspections, We take care of everything from start to end.
+        {data?.description}
       </p>
 
       {/* Buttons */}
