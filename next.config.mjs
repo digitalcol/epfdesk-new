@@ -1,19 +1,19 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "cdn.sanity.io",
-      },
-    ],
-  },
-  experimental: {
-    esmExternals: "loose",
-  },
-};
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   images: {
+//     remotePatterns: [
+//       {
+//         protocol: "https",
+//         hostname: "cdn.sanity.io",
+//       },
+//     ],
+//   },
+//   experimental: {
+//     esmExternals: "loose",
+//   },
+// };
 
-export default nextConfig;
+// export default nextConfig;
 
 // /** @type {import('next').NextConfig} */
 // const nextConfig = {
@@ -61,3 +61,36 @@ export default nextConfig;
 // };
 
 // export default nextConfig;
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+      },
+    ],
+  },
+  experimental: {
+    esmExternals: "loose",
+  },
+
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "www.epfdesk.com",
+          },
+        ],
+        destination: "https://epfdesk.com/:path*",
+        permanent: true,
+      },
+    ];
+  },
+};
+
+export default nextConfig;
