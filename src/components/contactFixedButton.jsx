@@ -241,7 +241,7 @@ export default function FloatingFormToggle({ animate = true }) {
           >
             <FaPhone className="size-5 sm:size-6 transition-transform sm:group-hover:scale-0" />
             <span className="hidden sm:inline transition-opacity sm:group-hover:opacity-0">
-              Contact Us
+              Call
             </span>
             <span className="absolute hidden sm:inline opacity-0 transition-opacity sm:group-hover:opacity-100">
               +919945933333
@@ -261,7 +261,7 @@ export default function FloatingFormToggle({ animate = true }) {
             className="flex h-[50px] w-[50px] sm:w-[165px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-0 md:p-4 lg:p-4 text-black shadow-lg transition hover:bg-[rgb(209,244,112)]"
           >
             <EnvelopeIcon className="size-5" />
-            <span className="hidden sm:inline">Email Us</span>
+            <span className="hidden sm:inline">Email</span>
           </a>
         </div>
       </>

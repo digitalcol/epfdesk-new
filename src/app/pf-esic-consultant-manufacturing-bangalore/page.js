@@ -127,7 +127,6 @@ const Manufacturing = () => {
       <Questioning uspData={uspDataManufacturing} />
       <Bubbles />
       <ContentSlider slides={slidesManufacturing} />
-      {/* <Testimonials/> */}
       <Upskills
         title="Secure Your Spot: Limited Onboarding"
         paragraphs={[
