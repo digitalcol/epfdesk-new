@@ -1,0 +1,196 @@
+import Script from "next/script";
+import FadeInWhenVisible from "@/components/fadeInWhenVisible";
+import { PerformanceSectionIndustry } from "@/components/PerformanceSectionIndustry";
+import CodeOfConduct from "@/components/CodeOfConduct";
+import FaqAccordion from "@/components/faqAccordian";
+
+import {
+  heroDataJaipurDistrict,
+  sectionsJaipurDistrict,
+  faqJaipurDistrict,
+} from "@/utils/data";
+
+/* ===========================
+   METADATA (APP ROUTER)
+=========================== */
+export const metadata = {
+  title:
+    "Jaipur EPF & ESIC Compliance: Gem & Jewellery PF, IT Park PE Liability & RO Jaipur Audits 2025 | EPFDesk",
+
+  description:
+    "Expert EPF & ESIC compliance defence for Jaipur gem exporters, Mahindra World City IT firms and RIICO MSMEs. Navigate RO Jaipur audits, EEC-2025 amnesty and New Labour Code wage compliance.",
+
+  keywords: [
+    "Jaipur PF consultant",
+    "EPF ESIC compliance Jaipur",
+    "Gem jewellery PF audit Jaipur",
+    "Mahindra World City ESIC compliance",
+    "RO Jaipur EPF 7A defence",
+    "EEC 2025 EPF Jaipur",
+    "Principal Employer liability Jaipur",
+  ],
+
+  alternates: {
+    canonical: "https://epfdesk.com/jaipur-epf-esic-compliance",
+  },
+
+  openGraph: {
+    title: "Jaipur EPF & ESIC Compliance | Gem, IT & Handicraft Hub",
+    description:
+      "PF & ESIC specialists for Jaipur gem exporters, IT parks and handicraft clusters under RO Jaipur.",
+    url: "https://epfdesk.com/jaipur-epf-esic-compliance",
+    images: [
+      {
+        url: "https://epfdesk.com/images/logo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jaipur EPF ESIC Compliance",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    images: ["https://epfdesk.com/images/logo.jpg"],
+  },
+};
+
+/* ===========================
+   PAGE
+=========================== */
+export default function Page() {
+  return (
+    <>
+      {/* ========= GEO META ========= */}
+      <Script id="jaipur-geo" strategy="beforeInteractive">
+        {`
+          document.head.insertAdjacentHTML('beforeend', \`
+            <meta name="geo.region" content="IN-RJ">
+            <meta name="geo.placename" content="Jaipur, Rajasthan">
+            <meta name="geo.position" content="26.9124;75.7873">
+            <meta name="ICBM" content="26.9124, 75.7873">
+              <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+            <meta name="googlebot" content="index, follow">
+            <meta name="author" content="EPFDesk">
+            <meta name="language" content="English">
+            <meta http-equiv="content-language" content="en-IN">
+            <meta property="og:site_name" content="EPFDesk">
+            <link rel="alternate" hreflang="en-IN" href="https://epfdesk.com/jaipur-epf-esic-compliance">
+            <link rel="alternate" hreflang="x-default" href="https://epfdesk.com/jaipur-epf-esic-compliance">
+          \`);
+        `}
+      </Script>
+
+      {/* ========= JSON-LD SCHEMA ========= */}
+      <Script
+        id="schema-jaipur"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "@id": "https://epfdesk.com/jaipur-epf-esic-compliance#organization",
+
+          name: "EPFDesk – EPF & ESIC Compliance Specialists for Jaipur Gem, IT & MSME Units",
+
+          alternateName:
+            "Jaipur EPF & ESIC Compliance Experts for Gem & Jewellery, IT Parks and RIICO MSMEs",
+
+          image: "https://epfdesk.com/images/logo.jpg",
+          url: "https://epfdesk.com/jaipur-epf-esic-compliance",
+          telephone: "+91-9945933333",
+          priceRange: "₹₹₹",
+
+          /* ✅ DISTRICT-CORRECT ADDRESS */
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "MI Road",
+            addressLocality: "Jaipur",
+            addressRegion: "Rajasthan",
+            postalCode: "302001",
+            addressCountry: "IN",
+          },
+
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 26.9124,
+            longitude: 75.7873,
+          },
+
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Jaipur District" },
+            { "@type": "Place", name: "Mahindra World City" },
+            { "@type": "Place", name: "Sitapura Industrial Area" },
+            { "@type": "Place", name: "VKI Industrial Area" },
+            { "@type": "Place", name: "Sanganer" },
+            { "@type": "Place", name: "Bagru" },
+          ],
+
+          description:
+            "EPF & ESIC compliance services for Jaipur gem & jewellery exporters, Mahindra World City IT companies, RIICO MSMEs and traditional handicraft clusters. Coverage includes RO Jaipur inspections, EPF Section 7A proceedings, EEC-2025 voluntary enrolment and Principal Employer liability defence.",
+
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "76",
+          },
+        })}
+      </Script>
+
+      {/* ========= CONTENT ========= */}
+      <FadeInWhenVisible>
+        <PerformanceSectionIndustry data={heroDataJaipurDistrict} />
+      </FadeInWhenVisible>
+
+      <FadeInWhenVisible>
+        <CodeOfConduct sections={sectionsJaipurDistrict} />
+      </FadeInWhenVisible>
+
+      <FaqAccordion faqs={faqJaipurDistrict} />
+
+      {/* ========= CONVERSION TRACKING ========= */}
+      <Script id="conversion-tracking-jaipur" strategy="afterInteractive">
+        {`
+          document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                  event_category: 'conversion',
+                  event_label: el.getAttribute('href'),
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(el => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'whatsapp_click', {
+                  event_category: 'conversion',
+                  event_label: window.location.pathname,
+                  value: 5
+                });
+              }
+            });
+          });
+
+          document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', 'form_submission', {
+                  event_category: 'lead',
+                  event_label: window.location.pathname,
+                  value: 10
+                });
+              }
+            });
+          });
+        `}
+      </Script>
+    </>
+  );
+}

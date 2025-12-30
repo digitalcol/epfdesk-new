@@ -82,22 +82,6 @@ export default function Bubbles() {
 
       const r = Math.max(3, Math.min(8, svgH * 0.9));
 
-      // 🔑 draw ONLY the outer line and circles – no “gap” segments
-      // const d = [
-      //   `M 0 ${centerY}`,
-      //   `L ${Lx - r} ${centerY}`,
-      //   `M ${Lx - r} ${centerY}`,
-      //   `a ${r} ${r} 0 1 0 ${2 * r} 0`,
-      //   `a ${r} ${r} 0 1 0 ${-2 * r} 0`,
-      //   `M ${Lx + r} ${centerY}`,
-      //   `L ${Rx - r} ${centerY}`,
-      //   `M ${Rx - r} ${centerY}`,
-      //   `a ${r} ${r} 0 1 0 ${2 * r} 0`,
-      //   `a ${r} ${r} 0 1 0 ${-2 * r} 0`,
-      //   `M ${Rx + r} ${centerY}`,
-      //   `L ${svgW} ${centerY}`,
-      // ].join(" ");
-
       const d = [
         // left line up to the first circle
         `M 0 ${centerY}`,

@@ -16,10 +16,7 @@ export const metadata = {
 };
 
 function Hero() {
-  return (
-    <HeroSection slide={heroSlides[3]} />
-    
-  );
+  return <HeroSection slide={heroSlides[3]} />;
 }
 
 const ProfessionalTax = () => {
@@ -28,13 +25,9 @@ const ProfessionalTax = () => {
       <FadeInWhenVisible>
         <Hero />
       </FadeInWhenVisible>
-      {/* <FadeInWhenVisible>
-        <PFCarousel />
-      </FadeInWhenVisible> */}
       <FadeInWhenVisible>
         <PFServicesSection />
       </FadeInWhenVisible>
-      {/* <PastelCards /> */}
       <FadeInWhenVisible>
         <FaqAccordion faqs={ptFaq} />
       </FadeInWhenVisible>

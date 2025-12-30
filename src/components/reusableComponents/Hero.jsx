@@ -21,9 +21,6 @@ const Bootcamps = ({ title, description }) => {
               <div className="line">
                 <div className="word text-4xl md:text-8xl font-extrabold">{title}</div>
               </div>
-              {/* <div className="line">
-                <div className="word text-8xl font-extrabold">{subTitle}</div>
-              </div> */}
             </h2>
 
             <p
@@ -93,124 +90,6 @@ const Bootcamps = ({ title, description }) => {
           </svg>
         </div>
       </div>
-
-      {/* <div className="u-container">
-        <ul className={styles["s__bootcamps"] + " js-bootcamps"}>
-          {[
-            {
-              year: "2025 BC#4",
-              topic: "Data Analytics",
-              topicClass: "sb__topic--data",
-              dates: "13 Oct - 19 Dec",
-              city: "Stockholm",
-            },
-            {
-              year: "2026 BC#1",
-              topic: "Generative AI",
-              topicClass: "sb__topic--genai",
-              dates: "5 Jan - 13 Mar",
-              city: "Stockholm",
-            },
-            {
-              year: "2026 BC#1",
-              topic: "Data Analytics",
-              topicClass: "sb__topic--data",
-              dates: "5 Jan - 13 Mar",
-              city: "Stockholm",
-            },
-            {
-              year: "2026 BC#2",
-              topic: "Generative AI",
-              topicClass: "sb__topic--genai",
-              dates: "6 Apr - 12 Jun",
-              city: "Stockholm",
-            },
-            {
-              year: "2026 BC#2",
-              topic: "Data Analytics",
-              topicClass: "sb__topic--data",
-              dates: "6 Apr - 12 Jun",
-              city: "Stockholm",
-            },
-            {
-              year: "2026 BC#3",
-              topic: "Generative AI",
-              topicClass: "sb__topic--genai",
-              dates: "3 Aug - 9 Oct",
-              city: "Stockholm",
-            },
-            {
-              year: "2026 BC#3",
-              topic: "Data Analytics",
-              topicClass: "sb__topic--data",
-              dates: "3 Aug - 9 Oct",
-              city: "Stockholm",
-            },
-          ].map((item, i) => (
-            <li
-              key={i}
-              className={
-                styles["s__bootcamp"] + " sb-bootcamp js-bootcamp"
-              }
-            >
-              <a href="#apply-now" data-bootcamp={i} className="sb__link">
-                <span className="sb__title">
-                  <span className="a-bullet-point a-bullet-point--outline a-bullet-point--green"></span>
-                  {item.year}
-                </span>
-
-                <span className={`sb__topic ${item.topicClass}`}>
-                  {item.topic}
-                </span>
-
-                <span className="sb__dates">{item.dates}</span>
-                <span className="sb__city">{item.city}</span>
-
-                <div
-                  className="btn-plain sb__btn-apply"
-                  data-plr-component="btn-plain"
-                >
-                  <span className="btn-plain__inner">
-                    <span className="btn-plain__text">Apply</span>
-                    <span className="btn-plain__arrow"></span>
-                  </span>
-
-                  <svg
-                    width="10"
-                    height="10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="btn-plain__background js-background"
-                    overflow="visible"
-                    preserveAspectRatio="none"
-                    style={{ width: "126px", height: "51px" }}
-                  >
-                    <path
-                      d="M25.5,0 L100.5,0 C134.0325,0 134.0325,51 100.5,51 L25.5,51 C-8.0325,51 -8.0325,0 25.5,0"
-                      className="btn-plain__path js-background-path"
-                    />
-                    <path
-                      d="M25.5,0 L100.5,0 C134.0325,0 134.0325,51 100.5,51 L25.5,51 C-8.0325,51 -8.0325,0 25.5,0"
-                      className="btn-plain__path js-background-path"
-                    />
-                  </svg>
-                </div>
-
-                <img
-                  loading="lazy"
-                  src="https://nodcoding.com/wp-content/themes/nod/static/images/arrow-2-right.svg"
-                  alt=""
-                  className="sb__arrow"
-                  width="9"
-                  height="14"
-                />
-
-                <span className="sb__background"></span>
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div> */}
     </div>
   );
 };

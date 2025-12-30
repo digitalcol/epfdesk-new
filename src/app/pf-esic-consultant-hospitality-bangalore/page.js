@@ -178,10 +178,6 @@ const Hospitality = () => {
       <Slider slides={slidesHospitality} />
       <Testimonials testimonials={testimonialsHospitality} />
       <Upskills
-        // title="Secure Your Spot: Limited Onboarding"
-        // paragraphs={[
-        //   "Our dedication to quality means we can only partner with a select number of new hospitality businesses each month. Secure your position for a seamless transition now.",
-        // ]}
         title="What Changes When Compliance Becomes Infrastructure"
         paragraphs={[
           "Workforce turns regulation into infrastructure — predictable, programmable, perpetual. Every filing, inspection, and renewal is executed through one pane of glass across all departments and entities.",
@@ -190,7 +186,7 @@ const Hospitality = () => {
           "Build without fear. We handle the law.",
         ]}
       />
-      {/* <YoutubeSlider /> */}
+
       <FAQ faqs={faqsHospitality} />
       <Footer />
     </>

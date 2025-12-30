@@ -1,5 +1,3 @@
-
-
 export const metadata = {
   title: "About Us | EPFdesk - India's Leading PF & Compliance Partner",
   description:
@@ -184,12 +182,12 @@ const HeroCarousel = () => {
     
     <section className="w-full px-0 py-0">
       <div className="flex flex-col">
-        <div className="mt-[4rem]">
+        <div className="mt-16">
           {heroData.map((data, index) => (
             
             <div
               key={index}
-              className={`relative w-full min-h-[90vh] px-4 py-10 bg-gradient-to-br ${data.gradient} flex items-center justify-center`}
+              className={`relative w-full min-h-[90vh] px-4 py-10 bg-linear-to-br ${data.gradient} flex items-center justify-center`}
             >
               {/* Floating bubbles */}
               <div className="absolute inset-0 pointer-events-none">

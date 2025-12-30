@@ -192,7 +192,7 @@ const LinkButtons = () => {
             className="transition-transform group-hover:scale-0"
           />
           <span className="transition-opacity group-hover:opacity-0">
-            Call Us
+            Call
           </span>
           <span className="absolute opacity-0 transition-opacity group-hover:opacity-100">
             +919945933333

@@ -25,7 +25,8 @@ export const metadata = {
   keywords:
     "Facility management compliance, CLRA compliance, RCM GST facility management, contract staff EPF ESIC, multi-state labor compliance, facility compliance India, vendor compliance management",
   alternates: {
-    canonical: "https://epfdesk.com/pf-esic-consultant-facility-management-bangalore",
+    canonical:
+      "https://epfdesk.com/pf-esic-consultant-facility-management-bangalore",
   },
   openGraph: {
     title: "Facility Management Compliance: Master CLRA, RCM & Multi-Site Risk",
@@ -174,7 +175,6 @@ const Facility = () => {
       <Questioning uspData={uspDataFacility} />
       <Bubbles />
       <ContentSlider slides={slidesFacility} />
-      {/* <Testimonials/> */}
       <Upskills
         title="Transform Your Contracts & Compliance Today"
         paragraphs={[
