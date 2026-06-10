@@ -104,50 +104,25 @@ const LinkButtons = () => {
     }
   };
 
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (modalRef.current && !modalRef.current.contains(event.target)) {
-        setIsOpen(false);
-      }
-    }
+  {/* WhatsApp Button */}
 
-    if (isOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
-    }
+  href="https://wa.me/919945933333?text=Hello%20EPFDesk%2C%0A%0AI'd%20like%20to%20know%20more%20about%20your%20compliance%20services."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex h-[50px] w-[180px] items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-4 text-black shadow-lg transition hover:opacity-90"
+>
+  <IoLogoWhatsapp className="size-6" />
+  <span>WhatsApp</span>
+</a>
 
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [isOpen]);
+{/* Call Button */}
 
-  useEffect(() => {
-    if (isOpen) {
-      document.body.classList.add("overflow-hidden");
-    } else {
-      document.body.classList.remove("overflow-hidden");
-    }
-
-    return () => {
-      document.body.classList.remove("overflow-hidden");
-    };
-  }, [isOpen]);
-
-  return (
-    <>
-      <div className="my-5 flex flex-row lg:items-center justify-center gap-2 md:flex-row">
-        {/* <button
-          onClick={() => {
-            const phone = "919980511980";
-            const text = encodeURIComponent(
-              "Hello EPFDesk,\n\n" +
-                "I’d like to know more about your compliance services.\n\n" +
-                "Company Name:\n" +
-                "No. of Employees:\n" +
-                "My Role:\n" +
-                "Areas of Interest:"
-            );
-            window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
-          }}
+  href="tel:+919945933333"
+  className="flex h-[50px] w-[180px] items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-4 text-black shadow-lg transition hover:opacity-90"
+>
+  <FaPhone size={22} />
+  <span>Call</span>
+</a>          }}
           className="flex h-[50px] w-[155px] cursor-pointer items-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-4 text-black shadow-lg transition hover:bg-[rgb(209,244,112)]"
         >
           <IoLogoWhatsapp className="size-6" /> WhatsApp
