@@ -1,4 +1,3 @@
-cat > src/components/whatsApp.jsx << 'ENDOFFILE'
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { FaPhone } from "react-icons/fa6";
@@ -24,11 +23,15 @@ const LinkButtons = () => {
     if (!formData.fullName.trim()) newErrors.fullName = "Full name is required.";
     if (!formData.email.trim()) {
       newErrors.email = "Email is required.";
-    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email) || /@gmail\.com$/i.test(formData.email)) {
+    } else if (
+      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email) ||
+      /@gmail\.com$/i.test(formData.email)
+    ) {
       newErrors.email = "Invalid email format.";
     }
     if (!formData.company.trim()) newErrors.company = "Company name is required.";
-    if (!formData.employees || formData.employees === "Number of employees") newErrors.employees = "Please select company size.";
+    if (!formData.employees || formData.employees === "Number of employees")
+      newErrors.employees = "Please select company size.";
     return newErrors;
   };
 
@@ -41,59 +44,192 @@ const LinkButtons = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = validate();
-    if (Object.keys(validationErrors).length > 0) { setErrors(validationErrors); return; }
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      return;
+    }
     const formPayload = new FormData();
-    Object.entries(formData).forEach(([key, value]) => formPayload.append(key, value));
+    Object.entries(formData).forEach(([key, value]) =>
+      formPayload.append(key, value)
+    );
     formPayload.append("access_key", "a9718221-b638-4ee6-bdc2-138fbe895a91");
     try {
-      const response = await fetch("https://api.web3forms.com/submit", { method: "POST", body: formPayload });
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formPayload,
+      });
       const data = await response.json();
       if (data.success) {
         toast.success("Form Submitted Successfully!");
-        setFormData({ fullName: "", email: "", company: "", employees: "", message: "", findUs: "" });
+        setFormData({
+          fullName: "",
+          email: "",
+          company: "",
+          employees: "",
+          message: "",
+          findUs: "",
+        });
         setErrors({});
         setIsOpen(false);
-      } else { toast.error(data.message); }
-    } catch (error) { toast.error("Network error. Please try again later."); }
+      } else {
+        toast.error(data.message);
+      }
+    } catch (error) {
+      toast.error("Network error. Please try again later.");
+    }
   };
 
   useEffect(() => {
     function handleClickOutside(event) {
-      if (modalRef.current && !modalRef.current.contains(event.target)) setIsOpen(false);
+      if (modalRef.current && !modalRef.current.contains(event.target))
+        setIsOpen(false);
     }
     if (isOpen) document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [isOpen]);
 
   useEffect(() => {
-    if (isOpen) { document.body.classList.add("overflow-hidden"); }
-    else { document.body.classList.remove("overflow-hidden"); }
+    if (isOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
     return () => document.body.classList.remove("overflow-hidden");
   }, [isOpen]);
 
   return (
     <>
       <div className="my-5 flex flex-row items-center justify-center gap-2">
-        
-          href="https://wa.me/919945933333?text=Hello%20EPFDesk"
+        <a
+          href="https://wa.me/919945933333?text=Hello%20EPFDesk%2C%0A%0AI'd%20like%20to%20know%20more%20about%20your%20compliance%20services."
           target="_blank"
           rel="noopener noreferrer"
-          className="flex h-[50px] w-[180px] items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-4 text-black shadow-lg"
+          className="flex h-[50px] w-[180px] items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-4 text-black shadow-lg transition hover:opacity-90"
         >
           <IoLogoWhatsapp className="size-6" />
           <span>WhatsApp</span>
         </a>
-        
+        <a
           href="tel:+919945933333"
-          className="flex h-[50px] w-[180px] items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-4 text-black shadow-lg"
+          className="flex h-[50px] w-[180px] items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-4 text-black shadow-lg transition hover:opacity-90"
         >
           <FaPhone size={22} />
           <span>Call</span>
         </a>
       </div>
+
+      {isOpen && (
+        <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+          <form className="space-y-6 py-2" onSubmit={handleSubmit}>
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+              <div>
+                <label className="mb-1 text-left block text-sm font-medium">Full name</label>
+                <input
+                  type="text"
+                  name="fullName"
+                  value={formData.fullName}
+                  onChange={handleChange}
+                  placeholder="First and last name"
+                  className="w-full rounded border border-gray-300 bg-white px-3 py-2 text-sm"
+                />
+                {errors.fullName && (
+                  <p className="text-sm text-red-600 mt-1">{errors.fullName}</p>
+                )}
+              </div>
+              <div>
+                <label className="mb-1 text-left block text-sm font-medium">Work email</label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="name@company.com"
+                  className="w-full rounded border border-gray-300 bg-white px-3 py-2 text-sm"
+                />
+                {errors.email && (
+                  <p className="text-sm text-red-600 mt-1">{errors.email}</p>
+                )}
+              </div>
+              <div>
+                <label className="mb-1 text-left block text-sm font-medium">Company</label>
+                <input
+                  type="text"
+                  name="company"
+                  value={formData.company}
+                  onChange={handleChange}
+                  placeholder="Company name"
+                  className="w-full rounded border border-gray-300 bg-white px-3 py-2 text-sm"
+                />
+                {errors.company && (
+                  <p className="text-sm text-red-600 mt-1">{errors.company}</p>
+                )}
+              </div>
+              <div>
+                <label className="mb-1 text-left block text-sm font-medium">Company size</label>
+                <select
+                  className="w-full rounded border border-gray-300 bg-white px-3 py-2 text-sm"
+                  name="employees"
+                  value={formData.employees}
+                  onChange={handleChange}
+                >
+                  <option>Number of employees</option>
+                  <option>1-10</option>
+                  <option>11-50</option>
+                  <option>51-200</option>
+                  <option>201-500</option>
+                  <option>500+</option>
+                </select>
+                {errors.employees && (
+                  <p className="text-sm text-red-600 mt-1">{errors.employees}</p>
+                )}
+              </div>
+            </div>
+            <div>
+              <label className="mb-1 text-left block text-sm font-medium">
+                Message <span className="text-gray-500">(optional)</span>
+              </label>
+              <textarea
+                rows="4"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Tell us about your project, needs, and timeline."
+                className="w-full rounded border border-gray-300 bg-white px-3 py-2 text-sm"
+              ></textarea>
+            </div>
+            <div>
+              <label className="mb-1 text-left block text-sm font-medium">
+                Where did you find us?{" "}
+                <span className="text-gray-500">(optional)</span>
+              </label>
+              <input
+                type="text"
+                name="findUs"
+                value={formData.findUs}
+                onChange={handleChange}
+                placeholder="How did you hear about us?"
+                className="w-full rounded border border-gray-300 bg-white px-3 py-2 text-sm"
+              />
+            </div>
+            <button
+              type="submit"
+              className="w-full rounded cursor-pointer bg-black py-2 text-sm font-medium text-white hover:bg-gray-900"
+            >
+              Contact sales
+            </button>
+            <p className="mt-2 text-xs text-gray-500">
+              By submitting this form, you confirm that you have read and
+              understood Workforce&apos;s{" "}
+              <a href="#" className="underline">Privacy Policy</a>.
+              This site is protected by{" "}
+              <a href="#" className="underline">Privacy Policy</a> and{" "}
+              <a href="#" className="underline">Terms of Service</a> apply.
+            </p>
+          </form>
+        </Modal>
+      )}
     </>
   );
 };
 
 export default LinkButtons;
-ENDOFFILE
